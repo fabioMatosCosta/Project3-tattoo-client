@@ -13,7 +13,6 @@ class Home extends Component {
     componentDidMount(){
         axios.get("http://localhost:3001/")
         .then((response)=> {
-            debugger
             this.setState({name: response.data.name})
         })
     }
