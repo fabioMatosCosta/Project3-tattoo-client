@@ -14,7 +14,8 @@ class SignUp extends Component {
             email: "",
             passWord: ""
         },
-        error: null
+        error: null,
+        message: ""
     }
     
     handleChange(event){
@@ -30,11 +31,16 @@ class SignUp extends Component {
         signup(this.state.user)
         .then((response) => {
             this.setState({
-                error: null
-            }, () => {
-                this.props.history.push(`/login`)
-            })
-        })
+                error: null,
+                message: response.data.message
+           })})
+        //, () => {
+        //         this.setState({
+        //             message: response.data
+        //         })
+        //         this.props.history.push(`/login`)
+        //     })
+        // })
         .catch((err) => {
             debugger
         })
@@ -43,6 +49,7 @@ class SignUp extends Component {
     render() {
         return (
             <div>
+                <h1>{this.state.message}</h1>
                 <form onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
