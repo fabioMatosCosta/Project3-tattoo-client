@@ -2,7 +2,7 @@ import Axios from 'axios';
 import qs from 'qs';
 
 const axios = Axios.create({
-    baseURL: 'http://localhost:3001/',
+    baseURL: 'http://localhost:5000/',
     // withCredentials: true,
     headers: {'content-type': 'application/x-www-form-urlencoded'}
 })
@@ -26,7 +26,7 @@ export const login = (user) => {
 
 export const logout = (user) => {
     return axios({
-        method:'GET',
+        method:'POST',
         url: 'logout',
     })
 }

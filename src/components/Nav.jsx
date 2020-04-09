@@ -32,7 +32,7 @@ class Nav extends Component {
                              :
                              <div className="navbar-start container">
                                  <Link className="navbar-item" to="/">
-                                 <i class="fas fa-home"></i>    
+                                 <i className="fas fa-home"></i>    
                                 </Link>
                                  <Link className="navbar-item" to="/signup">
                                      Signup
