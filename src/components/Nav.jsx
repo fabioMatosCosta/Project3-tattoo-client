@@ -14,9 +14,8 @@ class Nav extends Component {
         return (
             <nav>
                 <Link to="/"><span class="icon has-text-info">
-                <i class="fab fa-fort-awesome"></i></i>
+                <i class="fab fa-fort-awesome"></i>
                     </span>Home</Link>
-               
 
 
                 <Link to="/signup">Signup</Link>
