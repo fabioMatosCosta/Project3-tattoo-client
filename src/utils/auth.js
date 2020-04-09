@@ -19,6 +19,7 @@ export const login = (user) => {
     return axios({
         method:'POST',
         url: 'login',
+        // withCredentials: true,
         data: qs.stringify(user)
     })
 }

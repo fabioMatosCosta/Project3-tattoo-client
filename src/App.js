@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Nav from './components/Nav';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path = '/' component = {Home}/>
           <Route path = '/signup' component = {Signup}/>
           <Route path = '/login' component = {Login}/>
+          <Route path = '/profile' component = {Profile}/>
         </Switch>
     </div>
   );
