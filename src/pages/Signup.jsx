@@ -30,6 +30,7 @@ class SignUp extends Component {
         event.preventDefault();
         signup(this.state.user)
         .then((response) => {
+            debugger
             this.setState({
                 error: null,
                 message: response.data.message

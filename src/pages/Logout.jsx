@@ -1,10 +1,12 @@
 import React, {Component}from 'react'
-import {logout} from '../utils/auth'
+import {logout, remUser} from '../utils/auth'
 
 class Logout extends Component {
     handleLogout(){
         logout()
         .then((response) => {
+            debugger
+            remUser();
             this.props.history.push(`/login`)
         })
         .catch((err) => {

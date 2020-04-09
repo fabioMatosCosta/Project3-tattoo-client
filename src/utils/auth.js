@@ -28,10 +28,6 @@ export const logout = (user) => {
         method:'GET',
         url: 'logout',
     })
-    .then((response)=>{
-        remUser();
-        
-    })
 }
 
 export const setUser = (user) => {
@@ -50,6 +46,6 @@ export const getUser = (user) => {
     return JSON.parse(window.localStorage.getItem('user'));
 }
 
-export const remUser = () => {
+export const remUser = (user) => {
     window.localStorage.removeItem('user');
 }
