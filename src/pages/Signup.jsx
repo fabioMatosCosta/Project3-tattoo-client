@@ -33,16 +33,12 @@ class SignUp extends Component {
             this.setState({
                 error: null,
                 message: response.data.message
-           })})
-        //, () => {
-        //         this.setState({
-        //             message: response.data
-        //         })
-        //         this.props.history.push(`/login`)
-        //     })
-        // })
+            }, () =>{
+                this.props.history.push(`/login`)
+            })
+        })
         .catch((err) => {
-            debugger
+            console.log(err)
         })
         }
 

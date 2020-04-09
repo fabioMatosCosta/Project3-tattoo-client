@@ -21,8 +21,16 @@ export const login = (user) => {
         url: 'login',
         data: qs.stringify(user)
     })
+}
+
+export const logout = (user) => {
+    return axios({
+        method:'GET',
+        url: 'logout',
+    })
     .then((response)=>{
-        setUser(response.data);
+        remUser();
+        
     })
 }
 
@@ -30,6 +38,18 @@ export const setUser = (user) => {
     window.localStorage.setItem('user', JSON.stringify(user));
 }
 
+export const verifyRes = (res) => {
+    if(res.data.hasOwnProperty("message")) {
+        return res.data
+    } else {
+        setUser(res.data);
+    }
+}
+
 export const getUser = (user) => {
     return JSON.parse(window.localStorage.getItem('user'));
+}
+
+export const remUser = () => {
+    window.localStorage.removeItem('user');
 }

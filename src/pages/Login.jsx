@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {login} from '../utils/auth'
+import {login, verifyRes} from '../utils/auth'
 
 class Login extends Component {
     constructor(props) {
@@ -30,6 +30,7 @@ class Login extends Component {
         login(this.state.user)
         .then((response) => {
             debugger
+            verifyRes(response);
             this.setState({
                 error: null,
                 message: response.data.message
