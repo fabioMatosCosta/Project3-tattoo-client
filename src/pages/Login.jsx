@@ -31,7 +31,7 @@ class Login extends Component {
             this.setState({
                 error: null
             }, () => {
-                this.props.history.push(`/profile`)
+                // this.props.history.push(`/profile`)
             })
         })
         .catch(function(err){
