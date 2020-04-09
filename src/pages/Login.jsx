@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {login} from '../utils/auth'
+import {login, verifyRes} from '../utils/auth'
 
 class Login extends Component {
     constructor(props) {
@@ -13,7 +13,8 @@ class Login extends Component {
             email: "",
             passWord: ""
         },
-        error: null
+        error: null,
+        message: "",
     }
     
     handleChange(event){
@@ -28,11 +29,15 @@ class Login extends Component {
         event.preventDefault();
         login(this.state.user)
         .then((response) => {
+            debugger
+            verifyRes(response);
             this.setState({
-                error: null
-            }, () => {
-                // this.props.history.push(`/profile`)
-            })
+                error: null,
+                message: response.data.message
+            } 
+            // () => {
+            //     this.props.history.push(`/profile`)
+            )
         })
         .catch(function(err){
             console.log(err)
@@ -42,6 +47,7 @@ class Login extends Component {
     render() {
         return (
             <div>
+                <h1>{this.state.message}</h1>
                 <form onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
@@ -49,7 +55,7 @@ class Login extends Component {
                         <div className = "column">
                             <div className = "field">
                                 <div className = "control">
-                                    <input className="input is-info is-rounded" type="text" placeholder = "email" value={this.state.email} onChange={this.handleChange} name = "userName"/>
+                                    <input className="input is-info is-rounded" type="text" placeholder = "email" value={this.state.email} onChange={this.handleChange} name = "email"/>
                                 </div>
                             </div>
                             <div className = "field">
