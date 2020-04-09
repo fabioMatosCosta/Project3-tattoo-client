@@ -29,14 +29,16 @@ class Login extends Component {
         event.preventDefault();
         login(this.state.user)
         .then((response) => {
-            debugger
-            verifyRes(response);
+            let res = verifyRes(response);
             this.setState({
                 error: null,
-                message: response.data.message
-            }, () => {
-                this.props.history.push(`/profile`)
+                message: res.message
             })
+        })
+        .then(()=>{
+            if(this.state.message === ""){
+                this.props.history.push(`/profile`)
+            }
         })
         .catch(function(err){
             console.log(err)
@@ -46,7 +48,6 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <h1>{this.state.message}</h1>
                 <form onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
@@ -62,6 +63,7 @@ class Login extends Component {
                                     <input className="input is-info is-rounded" type="password" placeholder = "password" value={this.state.password} onChange={this.handleChange} name = "passWord"/>
                                 </div>
                             </div>
+                            <h1>{this.state.message}</h1>
                             <button className= "button is-primary is-medium is-rounded" type= "submit">Login</button>
                         </div>
                         <div className = "column">

@@ -5,7 +5,6 @@ class Logout extends Component {
     handleLogout(){
         logout()
         .then((response) => {
-            debugger
             remUser();
             this.props.history.push(`/login`)
         })
