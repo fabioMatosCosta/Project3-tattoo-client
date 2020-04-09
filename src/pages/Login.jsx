@@ -10,7 +10,7 @@ class Login extends Component {
 
     state = {
         user: {
-            userName: "",
+            email: "",
             passWord: ""
         },
         error: null
@@ -49,7 +49,7 @@ class Login extends Component {
                         <div className = "column">
                             <div className = "field">
                                 <div className = "control">
-                                    <input className="input is-info is-rounded" type="text" placeholder = "username" value={this.state.username} onChange={this.handleChange} name = "userName"/>
+                                    <input className="input is-info is-rounded" type="text" placeholder = "email" value={this.state.email} onChange={this.handleChange} name = "userName"/>
                                 </div>
                             </div>
                             <div className = "field">

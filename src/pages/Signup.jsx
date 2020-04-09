@@ -10,7 +10,6 @@ class SignUp extends Component {
 
     state = {
         user: {
-            userName: "",
             firstName: "",
             email: "",
             passWord: ""
@@ -49,11 +48,6 @@ class SignUp extends Component {
                         <div className = "column">
                         </div>
                         <div className = "column">
-                            <div className = "field">
-                                <div className = "control">
-                                    <input className ="input is-info is-rounded" type="text" placeholder = "username" value={this.state.username} onChange = {this.handleChange} name = "userName"/>
-                                </div>
-                            </div>
                             <div className = "field">
                                 <div className = "control">
                                     <input className ="input is-info is-rounded" type="text" placeholder = "firstname" value={this.state.firstname} onChange = {this.handleChange} name = "firstName"/>
