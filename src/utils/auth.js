@@ -3,7 +3,7 @@ import qs from 'qs';
 
 const axios = Axios.create({
     baseURL: 'http://localhost:3001/',
-    // withCredentials: true,
+    withCredentials: true,
     headers: {'content-type': 'application/x-www-form-urlencoded'}
 })
 
@@ -19,18 +19,20 @@ export const login = (user) => {
     return axios({
         method:'POST',
         url: 'login',
-        // withCredentials: true,
         data: qs.stringify(user)
     })
     .then((response)=> {
-        setUser(response.data);
+        setUser(response.data)
     })
 }
 
-export const logout = (user) => {
+export const logout = () => {
     return axios({
-        method:'POST',
+        method:'GET',
         url: 'logout',
+    })
+    .then(()=> {
+        remUser();
     })
 }
 
@@ -51,6 +53,6 @@ export const getUser = (user) => {
     return JSON.parse(window.localStorage.getItem('user'));
 }
 
-export const remUser = (user) => {
+export const remUser = () => {
     window.localStorage.removeItem('user');
 }

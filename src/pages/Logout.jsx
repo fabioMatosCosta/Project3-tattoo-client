@@ -1,23 +1,23 @@
 import React, {Component}from 'react'
-import {logout, remUser} from '../utils/auth'
-import Nav from "../components/Nav";
+import {logout} from '../utils/auth'
 
 class Logout extends Component {
     handleLogout(){
         logout()
-        .then((response) => {
-            remUser();
+        .then(() => {
             this.props.history.push(`/login`)
         })
         .catch((err) => {
-            debugger
+            console.log(err)
         })
     
     }
 
     render(){
-        return(<div>{this.handleLogout()}
-            <h6>LogOut</h6>
+        return(
+        <div>
+            {this.handleLogout()}
+            <img src="https://media.giphy.com/media/WiIuC6fAOoXD2/giphy.gif" alt="loading"/>
         </div>)
     }
 }

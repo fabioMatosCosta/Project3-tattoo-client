@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {login, verifyRes} from '../utils/auth'
+import {login} from '../utils/auth'
 import DefaultLayout from "../layout/Default";
 
 class Login extends Component {
@@ -28,18 +28,17 @@ class Login extends Component {
 
     handleSubmit(event){
         event.preventDefault();
-        debugger
         login(this.state.user)
         .then(() => {
             this.props.history.push(`/profile`);
         })
-        .catch(function(err){
-            console.log(err)
+        .catch((err)=>{
+            let msg = err.response.data.message;
+            this.setState({message: msg})
         })
     }
 
     render() {
-        debugger
         return (
             <DefaultLayout>
                 <br/>
