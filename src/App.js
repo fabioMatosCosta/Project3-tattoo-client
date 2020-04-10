@@ -4,20 +4,22 @@ import {Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import Nav from './components/Nav';
 import Profile from './pages/Profile';
 import Logout from './pages/Logout';
+import Tattoos from './pages/Tattoos';
+import TattooArtists from './pages/TattooArtists';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
       <Switch>
           <Route exact path = '/' component = {Home}/>
           <Route path = '/signup' component = {Signup}/>
           <Route path = '/login' component = {Login}/>
           <Route path = '/profile' component = {Profile}/>
           <Route path = '/logout' component = {Logout}/>
+          <Route path = '/tattoos' component = {Tattoos}/>
+          <Route path = '/tattoo-artists' component = {TattooArtists}/>
         </Switch>
     </div>
   );

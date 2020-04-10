@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import DefaultLayout from "../layout/Default";
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -19,9 +19,9 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <DefaultLayout>
                 <h1>{this.state.name}</h1>
-            </div>
+            </DefaultLayout>
         )
     }
 }

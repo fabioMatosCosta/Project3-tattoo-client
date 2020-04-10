@@ -15,12 +15,15 @@
     font-family: 'Permanent Marker', cursive;
     font-size:1.3rem;
     color:black;
+    margin-right: 9rem;
+    margin-top: 1.7rem;
   }
   #history{
     font-family: 'Press Start 2P', cursive;
     font-size:1.3rem;
     color:black;
     transform: rotate(-10deg);
+    letter-spacing: -4px;
   }
   #logout{
     font-family: 'Rye', cursive;
@@ -41,4 +44,26 @@
     color:black;
     transform: rotate(-20deg);  
   
+  }
+  #tattoo-artists{
+    font-family: 'Frijole', cursive;
+    width: 10vw;
+    font-size:1.3rem;
+    color:black;
+    transform: rotate(-90deg);  
+    letter-spacing: -2px;
+    margin-left: 3rem;
+  
+  }
+  #tattoos{
+    font-family: 'Frijole', cursive;
+    font-size:1.3rem;
+    color:black;
+    transform: rotate(-90deg);  
+    letter-spacing: -2px;
+  
+  }
+
+  a.navbar-item:hover {
+    background-color: transparent!important;
   }

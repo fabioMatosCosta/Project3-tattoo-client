@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {login, verifyRes} from '../utils/auth'
+import DefaultLayout from "../layout/Default";
 
 class Login extends Component {
     constructor(props) {
@@ -27,18 +28,10 @@ class Login extends Component {
 
     handleSubmit(event){
         event.preventDefault();
+        debugger
         login(this.state.user)
-        .then((response) => {
-            let res = verifyRes(response);
-            this.setState({
-                error: null,
-                message: res.message
-            })
-        })
-        .then(()=>{
-            if(this.state.message === ""){
-                this.props.history.push(`/profile`)
-            }
+        .then(() => {
+            this.props.history.push(`/profile`);
         })
         .catch(function(err){
             console.log(err)
@@ -46,8 +39,9 @@ class Login extends Component {
     }
 
     render() {
+        debugger
         return (
-            <div>
+            <DefaultLayout>
                 <br/>
                 
                 <form onSubmit= {this.handleSubmit}>
@@ -72,7 +66,7 @@ class Login extends Component {
                     </div>
                         <h1>{this.state.message}</h1>
                 </form>
-            </div>
+            </DefaultLayout>
         )
     }
 }
