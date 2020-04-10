@@ -49,7 +49,7 @@ class Login extends Component {
         return (
             <div>
                 <br/>
-                <h1>{this.state.message}</h1>
+                
                 <form onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
@@ -70,6 +70,7 @@ class Login extends Component {
                         <div className = "column">
                         </div>
                     </div>
+                        <h1>{this.state.message}</h1>
                 </form>
             </div>
         )

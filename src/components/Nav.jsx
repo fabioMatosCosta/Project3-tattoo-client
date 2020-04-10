@@ -11,7 +11,7 @@ class Nav extends Component {
                 
         }
     }
-
+    
     render() {
         let user = getUser()
             return (
