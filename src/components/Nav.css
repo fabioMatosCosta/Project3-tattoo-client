@@ -24,6 +24,8 @@
     color:black;
     transform: rotate(-10deg);
     letter-spacing: -4px;
+    height: 10vh;
+    margin-top: 3rem;
   }
   #logout{
     font-family: 'Rye', cursive;
