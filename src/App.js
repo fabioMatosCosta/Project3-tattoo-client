@@ -6,6 +6,8 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Logout from './pages/Logout';
+import Tattoos from './pages/Tattoos';
+import TattooArtists from './pages/TattooArtists';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path = '/login' component = {Login}/>
           <Route path = '/profile' component = {Profile}/>
           <Route path = '/logout' component = {Logout}/>
+          <Route path = '/tattoos' component = {Tattoos}/>
+          <Route path = '/tattoo-artists' component = {TattooArtists}/>
         </Switch>
     </div>
   );
