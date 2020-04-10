@@ -27,7 +27,7 @@ function Nav() {
                                 Tattoo history and how to's
                                  </Link>
                             <Link className="navbar-item" id="profile" to="/profile">
-                                <p>Welcome {user.firstName}</p>
+                                <p>{user.firstName}</p>
                             </Link>
                         </div>
                         <div className="navbar-end ">

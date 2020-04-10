@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Logout from './pages/Logout';
 import Tattoos from './pages/Tattoos';
 import TattooArtists from './pages/TattooArtists';
+import History from './pages/History';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path = '/logout' component = {Logout}/>
           <Route path = '/tattoos' component = {Tattoos}/>
           <Route path = '/tattoo-artists' component = {TattooArtists}/>
+          <Route path = '/history' component = {History}/>
         </Switch>
     </div>
   );

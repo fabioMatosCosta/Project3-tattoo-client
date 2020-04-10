@@ -13,19 +13,35 @@ class TattooArtists extends Component {
     render() {
         return (
             <DefaultLayout>
-                <div class="columns">
+                <div class="columns ">
                     <div class="column">
-                        First column
+                        <div>
+                            <img src="/images/David.jpg" alt="" />
                         </div>
+                        <div>
+                            <p>Blackest Black Tattoo's</p>
+                            <button>Find out more</button>
+                        </div>
+                    </div>
                     <div class="column">
-                        Second column
+                        <div>
+                            <img src="/images/Christian.jpg" alt="" />
                         </div>
+                        <div>
+                            <p>Black and grey oldschool</p>
+                            <button>Find out more</button>
+                        </div>
+                    </div>
                     <div class="column">
-                        Third column
+                        <div>
+                            First column
                         </div>
+                    </div>
                     <div class="column">
-                        Fourth column
+                        <div>
+                            First column
                         </div>
+                    </div>
                 </div>
             </DefaultLayout>
         )
