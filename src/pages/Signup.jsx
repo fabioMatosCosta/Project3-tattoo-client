@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {signup} from '../utils/auth';
+import Nav from "../components/Nav";
 
 class SignUp extends Component {
     constructor(props) {
@@ -45,6 +46,7 @@ class SignUp extends Component {
     render() {
         return (
             <div>
+                <Nav/>
                 <br />
                 <h1>{this.state.message}</h1>
                 <form onSubmit= {this.handleSubmit}>

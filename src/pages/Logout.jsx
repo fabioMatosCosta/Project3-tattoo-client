@@ -1,5 +1,6 @@
 import React, {Component}from 'react'
 import {logout, remUser} from '../utils/auth'
+import Nav from "../components/Nav";
 
 class Logout extends Component {
     handleLogout(){

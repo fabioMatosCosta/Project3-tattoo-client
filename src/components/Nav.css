@@ -42,3 +42,7 @@
     transform: rotate(-20deg);  
   
   }
+
+  a.navbar-item:hover {
+    background-color: transparent!important;
+  }

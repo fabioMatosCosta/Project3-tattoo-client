@@ -22,6 +22,9 @@ export const login = (user) => {
         // withCredentials: true,
         data: qs.stringify(user)
     })
+    .then((response)=> {
+        setUser(response.data);
+    })
 }
 
 export const logout = (user) => {

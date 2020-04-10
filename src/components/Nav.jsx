@@ -4,15 +4,8 @@ import {getUser} from "../utils/auth";
 import "./Nav.css"
 
 
-class Nav extends Component {
-    constructor(props) {
-        super(props)
+function Nav() {
 
-        this.state = {
-        }
-    }
-
-    render() {
         let user = getUser()
             return (
              <nav className="navbar is-dark"  id="main-nav" role="navigation" aria-label="main navigation">
@@ -57,7 +50,6 @@ class Nav extends Component {
              </div>
          </nav>
         )
-    }
 }
 
 export default Nav

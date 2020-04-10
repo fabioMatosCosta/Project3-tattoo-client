@@ -3,6 +3,7 @@ import {getUser} from '../utils/auth';
 import {Link} from "react-router-dom"
 import ImageUpload from "../components/ImageUpload"
 import Imageupload from '../components/ImageUpload';
+import DefaultLayout from "../layout/Default";
 
 
 class Profile extends Component {
@@ -16,11 +17,11 @@ class Profile extends Component {
 
     render() {
         return (
-            <div>
+            <DefaultLayout>
                 <h1>Yo {this.state.user.firstName}</h1>
                 <Link to = "/logout"><button>Logout</button></Link>
                 <Imageupload id="image"/>
-            </div>
+            </DefaultLayout>
         )
     }
 }
