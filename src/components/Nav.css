@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+#main-nav{
+    background-image: url("./fistback.png");
+    height: 30vh;
+    /* object-fit: cover; */
+    background-size: 100%;
+    background-position: 80% 45%;
+  }
+  
+  #home{
+    font-family: 'Permanent Marker', cursive;
+    font-size:1.3rem;
+    color:black;
+  }
+  #history{
+    font-family: 'Press Start 2P', cursive;
+    font-size:1.3rem;
+    color:black;
+    transform: rotate(-10deg);
+  }
+  #logout{
+    font-family: 'Rye', cursive;
+    font-size:1.3rem;
+    color:black;
+    transform: rotate(20deg);  
+  }
+  #profile{
+    font-family: 'Frijole', cursive;
+    font-size:1.3rem;
+    color:black;
+    transform: rotate(20deg);  
+  
+  }
+  #welcome{
+    font-family: 'Frijole', cursive;
+    font-size:1.3rem;
+    color:black;
+    transform: rotate(-20deg);  
+  
+  }
