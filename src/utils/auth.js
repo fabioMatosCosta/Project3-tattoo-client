@@ -37,7 +37,6 @@ export const setUser = (user) => {
 
 export const verifyRes = (res) => {
     if(res.data.hasOwnProperty("message")) {
-
         return res.data
     } else {
         setUser(res.data);
