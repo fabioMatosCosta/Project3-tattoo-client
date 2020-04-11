@@ -11,7 +11,8 @@ class Heal extends Component {
     render() {
         return (
             <div>
-                How Do I Take Care of My Tattoo?
+                <img src="https://www.lush.ca/on/demandware.static/-/Library-Sites-LushSharedLibrary/default/dw9cc2f903/images/2017/July/4-top-tattoo-care-tips-in-line.jpg" alt=""/>
+How Do I Take Care of My Tattoo?
 How to care of a Tattoo? As you leave the parlor with your fresh new piece, this is the question you will find yourself asking.
 
 Summary
