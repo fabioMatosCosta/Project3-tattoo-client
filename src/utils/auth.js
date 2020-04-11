@@ -22,6 +22,7 @@ export const login = (user) => {
         data: qs.stringify(user)
     })
     .then((response)=> {
+        debugger
         setUser(response.data)
     })
 }
@@ -33,6 +34,16 @@ export const logout = () => {
     })
     .then(()=> {
         remUser();
+    })
+}
+
+export const profile = () => {
+    return axios({
+        method:'GET',
+        url: 'user/profile',
+    })
+    .then((response)=>{
+        setUser(response.data)
     })
 }
 

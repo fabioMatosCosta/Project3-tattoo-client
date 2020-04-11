@@ -9,14 +9,16 @@ class Profile extends Component {
         super(props)
 
         this.state = {
-            user:getUser()
+            user: getUser()
         }
     }
+    
 
     render() {
         return (
             <DefaultLayout>
                 <h1>Yo {this.state.user.firstName}</h1>
+                <img src={this.state.user.image.imgPath} alt="pic"/>
                 <Link to = "/logout"><button>Logout</button></Link>
             </DefaultLayout>
         )
