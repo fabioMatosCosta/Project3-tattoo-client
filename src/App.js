@@ -11,11 +11,13 @@ import TattooArtists from './pages/TattooArtists';
 import History from './pages/History';
 import Museum from './pages/Museum';
 import UploadPic from './pages/UploadPic';
+import AddThing from './components/Addthing';
+import Heal from './pages/Heal';
 
 function App() {
   return (
     <div className="App">
-      <UploadPic />
+      {/* <UploadPic /> */}
       <Switch>
           <Route exact path = '/' component = {Home}/>
           <Route path = '/signup' component = {Signup}/>
@@ -27,6 +29,7 @@ function App() {
           <Route path = '/museum' component = {Museum}/>
           <Route path = '/museum' component = {Museum}/>
           <Route path = '/history' component = {History}/>
+          <Route path = '/heal' component = {Heal}/>
         </Switch>
     </div>
   );

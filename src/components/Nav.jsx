@@ -24,7 +24,7 @@ function Nav() {
                                 Tattoos
                                  </Link>
                             <Link className="navbar-item" id="history" to="/history">
-                                Tattoo history and how to's
+                                Tattoo Guides And History
                                  </Link>
                             <Link className="navbar-item" id="profile" to="/profile">
                                 <p>{user.firstName}</p>

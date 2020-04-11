@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+.box{
+    /* position: relative; */
+    display: inline-block; /* Make the width of box same as image */
+}
+.box .text{
+    position: absolute;
+    background-color: black;
+    color: white;
+    z-index: 999;    
+    margin: 0 auto;
+    font-family: 'Nosifer', cursive;
+    left: 0;
+    right: 0;
+    top: 40%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 10%; /* Set the width of the positioned div */
+}
+/* #bigDoc{
+    height: 20vh;
+} */

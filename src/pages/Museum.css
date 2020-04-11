@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade&display=swap');
+
+.big-titles{
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.small-titles{
+    font-family: 'Markazi Text', serif;
+}
+
+.all{
+    font-family: 'Scheherazade', serif;
+    font-size: 1.6rem;
+} 
