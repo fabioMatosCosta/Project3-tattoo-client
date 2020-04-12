@@ -47,18 +47,17 @@ export const profile = () => {
     })
 }
 
+export const addPic = () => {
+    return axios({
+        method:'POST',
+        url: 'user/addPic',
+    })
+}
+
 export const setUser = (user) => {
     window.localStorage.setItem('user', JSON.stringify(user));
 }
 
-export const verifyRes = (res) => {
-    if(res.data.hasOwnProperty("message")) {
-        return res.data
-    } else {
-        setUser(res.data);
-        return {message: ""}
-    }
-}
 
 export const getUser = (user) => {
     return JSON.parse(window.localStorage.getItem('user'));
