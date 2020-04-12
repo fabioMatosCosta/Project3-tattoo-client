@@ -15,6 +15,9 @@ import AddThing from './components/Addthing';
 import Heal from './pages/Heal';
 import Remove from './pages/Remove';
 import Pain from './pages/Pain';
+import David from './pages/Artists/David';
+import Christian from './pages/Artists/Christian';
+
 
 function App() {
   return (
@@ -33,7 +36,10 @@ function App() {
           <Route path = '/history' component = {History}/>
           <Route path = '/heal' component = {Heal}/>
           <Route path = '/remove' component = {Remove}/>
+          <Route path = '/remove' component = {Remove}/>
           <Route path = '/pain' component = {Pain}/>
+          <Route path = '/david' component = {David}/>
+          <Route path = '/christian' component = {Christian}/>
         </Switch>
     </div>
   );
