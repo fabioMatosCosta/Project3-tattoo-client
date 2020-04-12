@@ -1,0 +1,17 @@
+
+
+.big-heal{
+    /* background-image: url("./fistback.png"); */
+    height: 30vh;
+    /* object-fit: cover; */
+    background-size: 100%;
+    background-position: 80% 45%;
+}
+
+.all-of-it{
+    font-family: 'Scheherazade', serif;
+    font-size: 1.4rem;
+}
+#has-to-go{
+    margin-top: 13rem;
+}

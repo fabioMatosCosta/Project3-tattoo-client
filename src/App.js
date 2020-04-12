@@ -13,6 +13,8 @@ import Museum from './pages/Museum';
 import UploadPic from './pages/UploadPic';
 import AddThing from './components/Addthing';
 import Heal from './pages/Heal';
+import Remove from './pages/Remove';
+import Pain from './pages/Pain';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path = '/museum' component = {Museum}/>
           <Route path = '/history' component = {History}/>
           <Route path = '/heal' component = {Heal}/>
+          <Route path = '/remove' component = {Remove}/>
+          <Route path = '/pain' component = {Pain}/>
         </Switch>
     </div>
   );
