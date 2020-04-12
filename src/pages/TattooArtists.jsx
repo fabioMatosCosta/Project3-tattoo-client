@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DefaultLayout from "../layout/Default";
+import {Link} from "react-router-dom"
 
 class TattooArtists extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class TattooArtists extends Component {
         return (
             <DefaultLayout>
                 <div class="columns ">
+                <Link to="/david">
                     <div class="column">
                         <div>
                             <img src="/images/David.jpg" alt="" />
@@ -23,6 +25,8 @@ class TattooArtists extends Component {
                             <button>Find out more</button>
                         </div>
                     </div>
+                    </Link>
+                    <Link to ="christian">
                     <div class="column">
                         <div>
                             <img src="/images/Christian.jpg" alt="" />
@@ -32,6 +36,7 @@ class TattooArtists extends Component {
                             <button>Find out more</button>
                         </div>
                     </div>
+                    </Link>
                     <div class="column">
                         <div>
                             First column
