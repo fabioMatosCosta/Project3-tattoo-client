@@ -7,21 +7,25 @@ class ArtistDetails extends Component {
         super(props)
 
         this.state = {
-                artist:{}
+                artist:{
+                    name: "",
+                    image: "",
+                    tattoos: []
+                }
         }
     }
     componentDidMount() {
         axios.get(`http://localhost:5000/artist/artist-detail/${this.props.match.params.id}`)
         .then(response => {
-          this.setState({artist: response.data})
-      })
+            this.setState({artist: response.data})
+        })
     }
     render() {
         return (
             <div>
-                {/* {this.state.artist.tattoos.map((tat,index)=>{
+                {this.state.artist.tattoos.map((tat,index)=>{
                     return <img src={tat.imgPath} alt=""/>
-                })} */}
+                })}
                 <h1>{this.state.artist.name}</h1>
                 <img src={this.state.artist.image} alt=""/>
             </div>
