@@ -1,11 +1,6 @@
-
 import React, { Component } from 'react'
-<<<<<<< HEAD
 import axios from "axios"
-=======
-import axios from "axios";
-import {Link} from "react-router-dom";
->>>>>>> 8138e509d7be9e34bb4046b1fac50b787f325920
+import {Link} from "react-router-dom"
 
 class TattooDetails extends Component {
     constructor(props) {

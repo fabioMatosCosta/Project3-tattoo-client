@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DefaultLayout from "../layout/Default";
 import Tattoos from "./Tattoos"
+import { getTattoos } from '../utils/tattoos';
+import TattooContainer from '../components/TattooContainer'
+import TattooContainerHome from '../components/TattooContainerHome'
+
 
 class Home extends Component {
     constructor(props) {
@@ -9,7 +13,7 @@ class Home extends Component {
         
         this.state = {
             name: "",
-            tattoos:Tattoos
+            tattoos:getTattoos()
         }
     }   
 
@@ -23,7 +27,9 @@ class Home extends Component {
     render() {
         return (
             <DefaultLayout>
-                <h1>{this.state.tattoos}</h1>
+                    {this.state.tattoos.map((tattoo, index) => {
+                            return (<TattooContainerHome key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
+                        })}
             </DefaultLayout>
         )
     }

@@ -7,16 +7,11 @@ class ArtistDetails extends Component {
         super(props)
 
         this.state = {
-<<<<<<< HEAD
-                artist:{},
-                
-=======
                 artist:{
                     name: "",
                     image: "",
                     tattoos: []
                 }
->>>>>>> 8138e509d7be9e34bb4046b1fac50b787f325920
         }
     }
     componentDidMount() {
@@ -31,14 +26,8 @@ class ArtistDetails extends Component {
                 {this.state.artist.tattoos.map((tat,index)=>{
                     return <img src={tat.imgPath} alt=""/>
                 })}
-<<<<<<< HEAD
-              <h1>{this.state.artist.category}</h1>
-             <img src={this.state.artist.imgPath} alt=""/> 
-             {/* <h1>{this.state.tattoos.artist.name}</h1> */}
-=======
                 <h1>{this.state.artist.name}</h1>
                 <img src={this.state.artist.image} alt=""/>
->>>>>>> 8138e509d7be9e34bb4046b1fac50b787f325920
             </div>
         )
     }
