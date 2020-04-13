@@ -6,7 +6,6 @@ class David extends Component {
         super(props)
 
         this.state = {
-                 
         }
     }
 

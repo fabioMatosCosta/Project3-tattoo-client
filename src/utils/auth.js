@@ -2,7 +2,7 @@ import Axios from 'axios';
 import qs from 'qs';
 
 const axios = Axios.create({
-    baseURL: 'http://localhost:3001/',
+    baseURL: 'http://localhost:5000/',
     withCredentials: true,
     headers: {'content-type': 'application/x-www-form-urlencoded'}
 })
@@ -22,7 +22,6 @@ export const login = (user) => {
         data: qs.stringify(user)
     })
     .then((response)=> {
-        debugger
         setUser(response.data)
     })
 }
@@ -65,4 +64,8 @@ export const getUser = (user) => {
 
 export const remUser = () => {
     window.localStorage.removeItem('user');
+}
+
+export const remTattoos = () => {
+    window.localStorage.removeItem('tattoos');
 }

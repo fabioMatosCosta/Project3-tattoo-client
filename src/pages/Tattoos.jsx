@@ -1,55 +1,25 @@
 import React, { Component } from 'react'
 import DefaultLayout from "../layout/Default";
+import {getTattoos} from '../utils/tattoos';
+import TattooContainer from '../components/TattooContainer'
+
 
 class Tattoos extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            
+            tattoos: getTattoos()
         }
     }
 
     render() {
         return (
             <DefaultLayout>
-            <div class="columns">
-                <div class="column">
-                    <div>
-                        <img src="https://source.unsplash.com/random" alt="" />
-                    </div>
-                    <div>
-                        <p>Blackest Black Tattoo's</p>
-                        <button>Find out more</button>
-                    </div>
-                </div>
-                <div class="column">
-                    <div>
-                        <img src="https://source.unsplash.com/random" alt="" />
-                    </div>
-                    <div>
-                        <p>Black and grey oldschool</p>
-                        <button>Find out more</button>
-                    </div>
-                </div>
-                <div class="column">
-                <div>
-                        <img src="https://source.unsplash.com/random" alt="" />
-                    </div>
-                    <div>
-                        <p>Black and grey oldschool</p>
-                        <button>Find out more</button>
-                    </div>
-                </div>
-                <div class="column">
-                    <div>
-                        <img src="https://source.unsplash.com/random" alt="" />
-                    </div>
-                    <div>
-                        <p>Black and grey oldschool</p>
-                        <button>Find out more</button>
-                    </div>
-                </div>
+            <div className="columns is-multiline">
+                {this.state.tattoos.map((tattoo, index)=>{
+                    return(<TattooContainer key = {index} img = {tattoo.imgPath} alt = {tattoo.category} />)
+                })}
             </div>
         </DefaultLayout>
         )
