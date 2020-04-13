@@ -22,5 +22,6 @@ export const setTattoos = (tattoos) => {
 }
 
 export const getTattoos = (tattoos) => {
+    tattooList();
     return JSON.parse(window.localStorage.getItem('tattoos'));
 }

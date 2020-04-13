@@ -17,7 +17,7 @@ import Remove from './pages/Remove';
 import Pain from './pages/Pain';
 import David from './pages/Artists/David';
 import Christian from './pages/Artists/Christian';
-
+import ProfileArt from './pages/Artists/ProfileArt'
 
 function App() {
   return (
@@ -40,6 +40,8 @@ function App() {
           <Route path = '/pain' component = {Pain}/>
           <Route path = '/david' component = {David}/>
           <Route path = '/christian' component = {Christian}/>
+          <Route path = '/artistProfile' component = {ProfileArt}/>
+          
         </Switch>
     </div>
   );
