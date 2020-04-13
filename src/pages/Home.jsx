@@ -20,7 +20,7 @@ class Home extends Component {
     render() {
         return (
             <DefaultLayout>
-                <h1>{this.state.name}</h1>
+                
             </DefaultLayout>
         )
     }

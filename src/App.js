@@ -17,6 +17,8 @@ import Remove from './pages/Remove';
 import Pain from './pages/Pain';
 import David from './pages/Artists/David';
 import Christian from './pages/Artists/Christian';
+import ArtistSignup from './pages/Signups/ArtistSignup';
+import UserSignup from './pages/Signups/UserSignup';
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
           <Route path = '/pain' component = {Pain}/>
           <Route path = '/david' component = {David}/>
           <Route path = '/christian' component = {Christian}/>
+          <Route path = '/artistlog' component = {ArtistSignup}/>
+          <Route path = '/userlog' component = {UserSignup}/>
         </Switch>
     </div>
   );

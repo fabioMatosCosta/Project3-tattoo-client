@@ -1,47 +1,17 @@
 import React, { Component } from 'react';
 import {signup} from '../utils/auth';
 import Nav from "../components/Nav";
+import {Link} from "react-router-dom"
 
 class SignUp extends Component {
     constructor(props) {
         super(props)
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+      
     }
 
     state = {
-        user: {
-            firstName: "",
-            email: "",
-            passWord: ""
-        },
-        error: null,
-        message: ""
+       
     }
-    
-    handleChange(event){
-        let userCp = {...this.state.user};
-        userCp[event.target.name] = event.target.value;
-        this.setState({
-            user : userCp
-        })
-    } 
-
-    handleSubmit(event){
-        event.preventDefault();
-        signup(this.state.user)
-        .then((response) => {
-            this.setState({
-                error: null,
-                message: response.data.message
-            }, () =>{
-                this.props.history.push(`/login`)
-            })
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-        }
 
     render() {
         return (
@@ -49,32 +19,21 @@ class SignUp extends Component {
                 <Nav/>
                 <br />
                 <h1>{this.state.message}</h1>
-                <form onSubmit= {this.handleSubmit}>
-                    <div className = "columns">
-                        <div className = "column">
-                        </div>
-                        <div className = "column">
-                            <div className = "field">
-                                <div className = "control">
-                                    <input className ="input is-dark is-rounded" type="text" placeholder = "firstname" value={this.state.firstname} onChange = {this.handleChange} name = "firstName"/>
-                                </div>
-                            </div>
-                            <div className = "field">
-                                <div className = "control">
-                                    <input className ="input is-dark is-rounded" type="email" placeholder = "email" value={this.state.email} onChange = {this.handleChange} name = "email"/>
-                                </div>
-                            </div>
-                            <div className = "field">
-                                <div className = "control">
-                                    <input className ="input is-dark is-rounded" type="password" placeholder = "password" value={this.state.password} onChange = {this.handleChange} name = "passWord"/>
-                                </div>
-                            </div>
-                            <button className= "button is-dark is-medium is-rounded" type= "submit">Sign Up</button>
-                        </div>
-                        <div className = "column">
-                        </div>
-                    </div>
-                </form>
+               
+                <div className="columns"> 
+                <Link to="/artistlog">
+                    <div className="column">
+               <img src="https://i.pinimg.com/originals/db/e3/a9/dbe3a96828adfb312144b92560ba8701.jpg" alt=""/>
+               Artist Login Page
+            </div>
+            </Link>
+            <Link to="/userlog">
+                    <div className="column">
+               <img src="https://images.unsplash.com/photo-1526342344406-fce1a452c567?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt=""/>
+               User Login Page  
+            </div>
+           </Link>
+            </div>
             </div>
         )
     }
