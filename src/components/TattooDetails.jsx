@@ -24,6 +24,7 @@ class TattooDetails extends Component {
             this.setState({tattoos: response.data})
         })
     }
+    
     render() {
         return (
             <div>
