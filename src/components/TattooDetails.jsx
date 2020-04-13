@@ -6,7 +6,7 @@ class TattooDetails extends Component {
         super(props)
 
         this.state = {
-                 tattoos:getTattoos()
+            tattoos:getTattoos()
         }
     }
     componentDidMount() {
