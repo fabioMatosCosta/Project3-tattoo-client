@@ -21,7 +21,30 @@ export const setTattoos = (tattoos) => {
     window.localStorage.setItem('tattoos', JSON.stringify(tattoos));
 }
 
-export const getTattoos = (tattoos) => {
+export const getTattoos = () => {
     tattooList();
     return JSON.parse(window.localStorage.getItem('tattoos'));
 }
+
+// export const Tat = (id) =>{
+//     return axios({
+//         method: 'GET',
+//         url: `tattoos/tattoo-detail/${id}`
+//     })
+//     .then((response)=>{
+//         setTat(response.data);
+//     })
+// }
+
+// export const setTat = (tat) =>{
+//     window.localStorage.setItem('tat', JSON.stringify(tat));
+// }
+
+// export const getTat = (id) => {
+//     // Tat(id);
+//     return JSON.parse(window.localStorage.getItem('tat'));
+// }
+
+// export const remTat =  () => {
+//     window.localStorage.removeItem('tat');
+// }
