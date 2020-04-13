@@ -7,7 +7,8 @@ class ArtistDetails extends Component {
         super(props)
 
         this.state = {
-                artist:{}
+                artist:{},
+                
         }
     }
     componentDidMount() {
@@ -22,8 +23,8 @@ class ArtistDetails extends Component {
                 {this.state.artist.tattoos.map((tat,index)=>{
                     return <img src={tat.imgPath} alt=""/>
                 })}
-              <h1>{this.state.tattoos.category}</h1>
-             <img src={this.state.tattoos.imgPath} alt=""/> 
+              <h1>{this.state.artist.category}</h1>
+             <img src={this.state.artist.imgPath} alt=""/> 
              {/* <h1>{this.state.tattoos.artist.name}</h1> */}
             </div>
         )

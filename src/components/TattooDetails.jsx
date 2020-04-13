@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {getTattoos} from "../utils/tattoos"
 import axios from "axios"
 
 class TattooDetails extends Component {
