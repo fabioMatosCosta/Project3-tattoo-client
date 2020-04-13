@@ -20,6 +20,7 @@ import Christian from './pages/Artists/Christian';
 import ArtistSignup from './pages/Signups/ArtistSignup';
 import UserSignup from './pages/Signups/UserSignup';
 import ProfileArt from './pages/Artists/ProfileArt'
+import TattooDetails from './components/TattooDetails'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path = '/artistlog' component = {ArtistSignup}/>
           <Route path = '/userlog' component = {UserSignup}/>
           <Route path = '/artistProfile' component = {ProfileArt}/>
+          <Route path = '/tattoo-details:/id' component = {TattooDetails}/>
           
         </Switch>
     </div>
