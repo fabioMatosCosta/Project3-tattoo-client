@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from "react-router-dom"
 
 class TattooContainer extends Component {
     constructor(props) {
@@ -7,7 +8,9 @@ class TattooContainer extends Component {
 
     render() {
         return (
+            
             <div className="column is-one-quarter-desktop is-half-tablet">
+                <Link to= {`/tattoo-details/:${this.props.id}`}>
                 <div>
                     <img src={this.props.img} alt={this.props.alt} />
                 </div>
@@ -15,7 +18,9 @@ class TattooContainer extends Component {
                     <p>{this.props.alt}</p>
                     <button>Find out more</button>
                 </div>
+                </Link>
             </div>
+            
         )
     }
 }
