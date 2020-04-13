@@ -7,10 +7,9 @@ class ArtistSignup extends Component {
         super(props)
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        
     }
     state = {
-        user: {
+        art: {
             firstName: "",
             email: "",
             passWord: "",
@@ -22,10 +21,10 @@ class ArtistSignup extends Component {
         message: ""
     }
     handleChange(event) {
-        let userCp = { ...this.state.user };
-        userCp[event.target.name] = event.target.value;
+        let artCp = { ...this.state.art };
+        artCp[event.target.name] = event.target.value;
         this.setState({
-            user: userCp
+            art: artCp
         })
     }
 
@@ -37,7 +36,7 @@ class ArtistSignup extends Component {
                     error: null,
                     message: response.data.message
                 }, () => {
-                    this.props.history.push(`/login`)
+                    this.props.history.push(`/loginArtist`)
                 })
             })
             .catch((err) => {

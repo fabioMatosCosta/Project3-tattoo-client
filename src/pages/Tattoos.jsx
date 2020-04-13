@@ -21,7 +21,7 @@ class Tattoos extends Component {
                     return(<TattooContainer key = {index} img = {tattoo.imgPath} alt = {tattoo.category} />)
                 })}
             </div>
-        </DefaultLayout>
+            </DefaultLayout>
         )
     }
 }

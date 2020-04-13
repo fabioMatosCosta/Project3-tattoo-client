@@ -34,10 +34,8 @@ function App() {
           <Route path = '/tattoos' component = {Tattoos}/>
           <Route path = '/tattoo-artists' component = {TattooArtists}/>
           <Route path = '/museum' component = {Museum}/>
-          <Route path = '/museum' component = {Museum}/>
           <Route path = '/history' component = {History}/>
           <Route path = '/heal' component = {Heal}/>
-          <Route path = '/remove' component = {Remove}/>
           <Route path = '/remove' component = {Remove}/>
           <Route path = '/pain' component = {Pain}/>
           <Route path = '/david' component = {David}/>
