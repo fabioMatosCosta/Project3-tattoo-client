@@ -47,6 +47,7 @@ function App() {
           <Route path = '/artistProfile' component = {ProfileArt}/>
           <Route path = '/tattoo-details/:id' component = {TattooDetails}/>
           <Route path = '/artist-details/:id' component = {ArtistDetails}/>
+          
         </Switch>
     </div>
   );

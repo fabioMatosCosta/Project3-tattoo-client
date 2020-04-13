@@ -7,7 +7,6 @@ import { Link } from "react-router-dom"
 class Tattoos extends Component {
     constructor(props) {
         super(props)
-
         this.state = {
             tattoos: getTattoos()
         }
