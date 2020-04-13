@@ -9,7 +9,12 @@ class TattooDetails extends Component {
                  tattoos:getTattoos()
         }
     }
-
+    componentDidMount() {
+        axios.get(`http://localhost:5000/tattoos/tattoo-detail/${this.state.tattoos.match.params.id}`)
+        .then(response => {
+          this.setState({tattoos: response.data})
+      })
+    }
     render() {
         return (
             <div>

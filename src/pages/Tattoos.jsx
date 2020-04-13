@@ -16,13 +16,12 @@ class Tattoos extends Component {
     render() {
         return (
             <DefaultLayout>
-                <Link to="/tattoo-details/:id">
                     <div className="columns is-multiline">
                         {this.state.tattoos.map((tattoo, index) => {
-                            return (<TattooContainer key={index} img={tattoo.imgPath} alt={tattoo.category} />)
+                            return ( <Link to= {`/tattoo-details/${tattoo._id}`}> <TattooContainer key={index} img={tattoo.imgPath} alt={tattoo.category} /></Link>)
                         })}
                     </div>
-                </Link>
+            
             </DefaultLayout>
         )
     }
