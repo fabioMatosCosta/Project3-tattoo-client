@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {getTattoos} from "../utils/tattoos"
+import {getTat} from "../utils/tattoos"
 import axios from "axios"
 
 class TattooDetails extends Component {
@@ -7,15 +7,15 @@ class TattooDetails extends Component {
         super(props)
 
         this.state = {
-                tattoos:{}
+                tattoos: getTat(this.props.match.params.id)
         }
     }
-    componentDidMount() {
-        axios.get(`http://localhost:5000/tattoos/tattoo-detail/${this.props.match.params.id}`)
-        .then(response => {
-          this.setState({tattoos: response.data})
-      })
-    }
+    // componentDidMount() {
+    //     axios.get(`http://localhost:5000/tattoos/tattoo-detail/${this.props.match.params.id}`)
+    //     .then(response => {
+    //       this.setState({tattoos: response.data})
+    //   })
+    // }
     render() {
         return (
             <div>

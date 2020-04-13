@@ -21,7 +21,18 @@ export const setTattoos = (tattoos) => {
     window.localStorage.setItem('tattoos', JSON.stringify(tattoos));
 }
 
-export const getTattoos = (tattoos) => {
+export const getTattoos = () => {
     tattooList();
     return JSON.parse(window.localStorage.getItem('tattoos'));
+}
+
+export const getTat = (id) =>{
+    return axios({
+        method: 'GET',
+        url: `tattoos/tattoo-detail/${id}`
+    })
+    .then((response)=>{
+        debugger
+        return response.data
+    })
 }
