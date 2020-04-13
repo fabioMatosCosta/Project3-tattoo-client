@@ -23,7 +23,7 @@ class TattooDetails extends Component {
              <h1>{this.state.tattoos._id}</h1>
              <h1>{this.state.tattoos.category}</h1>
              <h1>{this.state.tattoos.imgPath}</h1>
-             <h1>{this.state.tattoos.artist.name}</h1>
+             {/* <h1>{this.state.tattoos.artist.name}</h1> */}
             </div>
         )
     }
