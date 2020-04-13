@@ -44,7 +44,7 @@ function App() {
           <Route path = '/artistlog' component = {ArtistSignup}/>
           <Route path = '/userlog' component = {UserSignup}/>
           <Route path = '/artistProfile' component = {ProfileArt}/>
-          <Route path = '/tattoo-details:/id' component = {TattooDetails}/>
+          <Route path = '/tattoo-details/:id' component = {TattooDetails}/>
           
         </Switch>
     </div>
