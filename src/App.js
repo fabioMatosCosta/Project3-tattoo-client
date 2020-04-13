@@ -19,7 +19,7 @@ import David from './pages/Artists/David';
 import Christian from './pages/Artists/Christian';
 import ArtistSignup from './pages/Signups/ArtistSignup';
 import UserSignup from './pages/Signups/UserSignup';
-
+import ProfileArt from './pages/Artists/ProfileArt'
 
 function App() {
   return (
@@ -44,6 +44,8 @@ function App() {
           <Route path = '/christian' component = {Christian}/>
           <Route path = '/artistlog' component = {ArtistSignup}/>
           <Route path = '/userlog' component = {UserSignup}/>
+          <Route path = '/artistProfile' component = {ProfileArt}/>
+          
         </Switch>
     </div>
   );
