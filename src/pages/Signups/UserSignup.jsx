@@ -7,7 +7,6 @@ class UserSignup extends Component {
         super(props)
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-       
     }
     state = {
         user: {
