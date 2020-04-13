@@ -7,13 +7,12 @@ class TattooDetails extends Component {
         super(props)
 
         this.state = {
-                 tattoos:{}
+                tattoos:{}
         }
     }
     componentDidMount() {
         axios.get(`http://localhost:5000/tattoos/tattoo-detail/${this.props.match.params.id}`)
         .then(response => {
-            debugger
           this.setState({tattoos: response.data})
       })
     }
