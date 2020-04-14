@@ -1,52 +1,25 @@
 import React, { Component } from 'react'
 import DefaultLayout from "../../layout/Default";
 import {Link} from "react-router-dom"
+import ArtistContainer from "../../components/AritstContainer"
+import {getArtistList} from "../../utils/artistsList"
 
 class TattooArtists extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-
+         artists:getArtistList()
         }
     }
 
     render() {
         return (
             <DefaultLayout>
-                <div className="columns ">
-                <Link to="/david">
-                    <div className="column">
-                        <div>
-                            <img src="/images/David.jpg" alt="" />
-                        </div>
-                        <div>
-                            <p>Blackest Black Tattoo's</p>
-                            <button>Find out more</button>
-                        </div>
-                    </div>
-                    </Link>
-                    <Link to ="christian">
-                    <div className="column">
-                        <div>
-                            <img src="/images/Christian.jpg" alt="" />
-                        </div>
-                        <div>
-                            <p>Black and grey oldschool</p>
-                            <button>Find out more</button>
-                        </div>
-                    </div>
-                    </Link>
-                    <div className="column">
-                        <div>
-                            First column
-                        </div>
-                    </div>
-                    <div className="column">
-                        <div>
-                            First column
-                        </div>
-                    </div>
+                <div className="columns is-multiline">
+                  {this.state.artists.map((artist,index)=>{
+                      return (<ArtistContainer key={index} img={artist.image.imgPath} id={artist._id} alt={artist.name} work={artist.work} />)
+                  })}
                 </div>
             </DefaultLayout>
         )

@@ -14,9 +14,9 @@ function Nav() {
                     <>
                         <div className="navbar-end">
 
-                            <Link className="navbar-item" id="home" to="/">
+                            {/* <Link className="navbar-item" id="home" to="/">
                                 Home
-                                </Link>
+                                </Link> */}
                             <Link className="navbar-item" id="tattoo-artists" to="/tattoo-artists">
                                 Tattoo Artists
                                 </Link>

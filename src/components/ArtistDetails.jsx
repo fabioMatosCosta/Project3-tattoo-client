@@ -22,13 +22,16 @@ class ArtistDetails extends Component {
     }
     render() {
         return (
-            <div>
-                {this.state.artist.tattoos.map((tat,index)=>{
-                    return <img src={tat.imgPath} alt=""/>
-                })}
+            <>
                 <h1>{this.state.artist.name}</h1>
                 <img src={this.state.artist.image} alt=""/>
+                <div className="columns">
+               
+                {this.state.artist.tattoos.map((tat,index)=>{
+                    return (<div className="column"><img src={tat.imgPath} alt=""/> </div>)
+                })}
             </div>
+            </>
         )
     }
 }

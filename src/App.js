@@ -3,7 +3,9 @@ import './App.css';
 import {Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
+import UserLogin from './pages/UserLogin';
 import Login from './pages/Login';
+import ArtistLogin from './pages/ArtistLogin';
 import Profile from './pages/Profile';
 import Logout from './pages/Logout';
 import Tattoos from './pages/Tattoos';
@@ -15,8 +17,6 @@ import AddThing from './components/Addthing';
 import Heal from './pages/Heal';
 import Remove from './pages/Remove';
 import Pain from './pages/Pain';
-import David from './pages/Artists/David';
-import Christian from './pages/Artists/Christian';
 import ArtistSignup from './pages/Signups/ArtistSignup';
 import UserSignup from './pages/Signups/UserSignup';
 import ProfileArt from './pages/Artists/ProfileArt'
@@ -30,6 +30,8 @@ function App() {
       <Switch>
           <Route exact path = '/' component = {Home}/>
           <Route path = '/signup' component = {Signup}/>
+          <Route path = '/user-login' component = {UserLogin}/>
+          <Route path = '/artist-login' component = {ArtistLogin}/>
           <Route path = '/login' component = {Login}/>
           <Route path = '/profile' component = {Profile}/>
           <Route path = '/logout' component = {Logout}/>
@@ -40,8 +42,6 @@ function App() {
           <Route path = '/heal' component = {Heal}/>
           <Route path = '/remove' component = {Remove}/>
           <Route path = '/pain' component = {Pain}/>
-          <Route path = '/david' component = {David}/>
-          <Route path = '/christian' component = {Christian}/>
           <Route path = '/artistlog' component = {ArtistSignup}/>
           <Route path = '/userlog' component = {UserSignup}/>
           <Route path = '/artistProfile' component = {ProfileArt}/>
