@@ -3,7 +3,6 @@ import axios from 'axios';
 import DefaultLayout from "../layout/Default";
 import Tattoos from "./Tattoos"
 import { getTattoos } from '../utils/tattoos';
-import TattooContainer from '../components/TattooContainer'
 import TattooContainerHome from '../components/TattooContainerHome'
 
 
