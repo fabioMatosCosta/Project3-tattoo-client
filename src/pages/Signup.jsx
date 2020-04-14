@@ -24,13 +24,13 @@ class SignUp extends Component {
                 <Link to="/artistlog">
                     <div className="column">
                <img src="https://i.pinimg.com/originals/db/e3/a9/dbe3a96828adfb312144b92560ba8701.jpg" alt=""/>
-               Artist Login Page
+               Artist Signup Page
             </div>
             </Link>
             <Link to="/userlog">
                     <div className="column">
                <img src="https://images.unsplash.com/photo-1526342344406-fce1a452c567?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt=""/>
-               User Login Page  
+               User Signup Page  
             </div>
            </Link>
             </div>
