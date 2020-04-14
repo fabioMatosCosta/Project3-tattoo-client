@@ -7,7 +7,7 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Logout from './pages/Logout';
 import Tattoos from './pages/Tattoos';
-import TattooArtists from './pages/TattooArtists';
+import TattooArtists from './pages/Artists/TattooArtists';
 import History from './pages/History';
 import Museum from './pages/Museum';
 import UploadPic from './pages/UploadPic';

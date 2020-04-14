@@ -20,7 +20,6 @@ class Tattoos extends Component {
                             return (<TattooContainer key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
                         })}
                     </div>
-            
             </DefaultLayout>
         )
     }

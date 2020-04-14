@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DefaultLayout from "../layout/Default";
+import DefaultLayout from "../../layout/Default";
 import {Link} from "react-router-dom"
 
 class TattooArtists extends Component {
