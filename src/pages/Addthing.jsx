@@ -33,7 +33,6 @@ class AddThing extends Component {
                 this.props.history.push(`/profile`)
             })
             .catch((error) => {
-                debugger
                 this.setState({ error: error.response.data.message })
             })
     }
