@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {getUser} from '../utils/auth';
+import {getUser, profile} from '../utils/auth';
 import {Link} from "react-router-dom"
 import DefaultLayout from "../layout/Default";
 import AddThing from '../components/Addthing';
@@ -10,6 +10,7 @@ class Profile extends Component {
         super(props)
 
         this.state = {
+            call: profile(),
             user: getUser()
         }
     }

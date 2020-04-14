@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import DefaultLayout from "../layout/Default";
 import { getTattoos } from '../utils/tattoos';
-import TattooContainer from '../components/TattooContainer'
-import { Link } from "react-router-dom"
+import TattooContainer from '../components/TattooContainer';
+import { Link } from "react-router-dom";
 
 class Tattoos extends Component {
     constructor(props) {
