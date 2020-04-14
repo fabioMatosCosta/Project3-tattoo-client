@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {getUser, profile} from '../utils/auth';
 import {Link} from "react-router-dom"
 import DefaultLayout from "../layout/Default";
-import AddThing from '../components/Addthing';
+import AddThing from './Addthing';
 
 
 class Profile extends Component {
@@ -19,14 +19,13 @@ class Profile extends Component {
     render() {
         return (
             <DefaultLayout>
-                    <AddThing />
                 <h1>Yo {this.state.user.firstName}</h1>
 
                     <figure className = "image is-128x128">
                         <img className="is-rounded" src={this.state.user.image.imgPath} alt="pic"/>
                     </figure>
 
-                <Link to = "/logout"><button>Logout</button></Link>
+                <Link to = "/edit-profile"><button>Edit Profile Pic</button></Link>
             </DefaultLayout>
         )
     }

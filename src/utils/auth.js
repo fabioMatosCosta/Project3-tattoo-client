@@ -19,7 +19,8 @@ export const login = (user) => {
     return axios({
         method:'POST',
         url: 'login',
-        data: qs.stringify(user)
+        data: qs.stringify(user),
+        withCredentials: true
     })
     .then((response)=> {
         setUser(response.data)

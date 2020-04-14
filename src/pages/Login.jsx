@@ -1,73 +1,37 @@
-import React, { Component } from 'react';
-import {login} from '../utils/auth'
-import DefaultLayout from "../layout/Default";
+import React, { Component } from 'react'
+import {Link} from "react-router-dom"
+import DefaultLayout from "../layout/Default"
 
 class Login extends Component {
     constructor(props) {
         super(props)
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
 
-    state = {
-        user: {
-            email: "",
-            passWord: ""
-        },
-        error: null,
-        message: "",
-    }
-    
-    handleChange(event){
-        let userCp = {...this.state.user};
-        userCp[event.target.name] = event.target.value;
-        this.setState({
-            user : userCp
-        })
-    } 
-
-    handleSubmit(event){
-        event.preventDefault();
-        login(this.state.user)
-        .then(() => {
-            this.props.history.push(`/profile`);
-        })
-        .catch((err)=>{
-            let msg = err.response.data.message;
-            this.setState({message: msg})
-        })
+        this.state = {
+                 
+        }
     }
 
     render() {
         return (
             <DefaultLayout>
-                <br/>
-                
-                <form onSubmit= {this.handleSubmit}>
-                    <div className = "columns">
-                        <div className = "column">
-                        </div>
-                        <div className = "column">
-                            <div className = "field">
-                                <div className = "control">
-                                    <input className="input is-black is-rounded" type="text" placeholder = "Email" value={this.state.email} onChange={this.handleChange} name = "email"/>
-                                </div>
-                            </div>
-                            <div className = "field">
-                                <div className = "control">
-                                    <input className="input is-black is-rounded" type="password" placeholder = "Password" value={this.state.password} onChange={this.handleChange} name = "passWord"/>
-                                </div>
-                            </div>
-                            <button className= "button is-black is-medium is-rounded" type= "submit"><i className="fas fa-door-open"></i>Login</button>
-                        </div>
-                        <div className = "column">
-                        </div>
-                    </div>
-                        <h1>{this.state.message}</h1>
-                </form>
+                <div className= "columns">
+                <div className= "column">
+                <Link to = "user-login">
+                    <img src="https://i.pinimg.com/originals/7b/da/f6/7bdaf659df9247047cfd891f43425768.jpg" alt=""/>
+                    User Login
+                </Link>
+                </div>
+                <div className= "column">
+
+                <Link to = "artist-login">
+                    <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/92623713_876682219514037_3058835782195216384_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=lETpBe130x8AX9SvxL9&_nc_ht=scontent-ams4-1.xx&_nc_tp=7&oh=975888867b0f10cb0dda094041d0be53&oe=5EB993AB" alt=""/>
+                    Artist Login
+                </Link>
+                </div>
+                </div>
             </DefaultLayout>
         )
     }
 }
 
-export default Login;
+export default Login
