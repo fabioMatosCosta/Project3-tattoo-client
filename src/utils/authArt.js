@@ -19,7 +19,7 @@ export const loginArt = (art) => {
     return axios({
         method:'POST',
         url: 'artist/login',
-        data: qs.stringify(art)
+        data: qs.stringify(art),
     })
     .then((response)=> {
         setArt(response.data)

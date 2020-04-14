@@ -13,7 +13,8 @@ import TattooArtists from './pages/Artists/TattooArtists';
 import History from './pages/History';
 import Museum from './pages/Museum';
 import UploadPic from './pages/UploadPic';
-import AddThing from './components/Addthing';
+import AddThing from './pages/Addthing';
+import AnotherThing from './pages/AnotherThing';
 import Heal from './pages/Heal';
 import Remove from './pages/Remove';
 import Pain from './pages/Pain';
@@ -47,6 +48,8 @@ function App() {
           <Route path = '/artistProfile' component = {ProfileArt}/>
           <Route path = '/tattoo-details/:id' component = {TattooDetails}/>
           <Route path = '/artist-details/:id' component = {ArtistDetails}/>
+          <Route path = '/edit-profile' component = {AddThing}/>
+          <Route path = '/edit-artist-profile' component = {AnotherThing}/>
           
         </Switch>
     </div>
