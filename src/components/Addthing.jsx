@@ -60,7 +60,7 @@ class AddThing extends Component {
                 var formData = new FormData(this.formRef.current); // more info: https://developer.mozilla.org/en-US/docs/Web/API/FormData
         
                 axios({
-                    url: "http://localhost:5000/user/addPic/",
+                    url: "http://localhost:5000/artist/addPic/",
                     data: formData,
                     headers: {
                         'content-type': 'multipart/form-data'

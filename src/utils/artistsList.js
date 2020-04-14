@@ -21,7 +21,7 @@ export const setArtistList = (artist) => {
     window.localStorage.setItem('artistList', JSON.stringify(artist));
 }
 
-export const getArtistList= () => {
+export const getArtistList = () => {
     artistList();
     return JSON.parse(window.localStorage.getItem('artistList'));
 }
