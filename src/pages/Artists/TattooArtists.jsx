@@ -14,9 +14,9 @@ class TattooArtists extends Component {
     render() {
         return (
             <DefaultLayout>
-                <div class="columns ">
+                <div className="columns ">
                 <Link to="/david">
-                    <div class="column">
+                    <div className="column">
                         <div>
                             <img src="/images/David.jpg" alt="" />
                         </div>
@@ -27,7 +27,7 @@ class TattooArtists extends Component {
                     </div>
                     </Link>
                     <Link to ="christian">
-                    <div class="column">
+                    <div className="column">
                         <div>
                             <img src="/images/Christian.jpg" alt="" />
                         </div>
@@ -37,12 +37,12 @@ class TattooArtists extends Component {
                         </div>
                     </div>
                     </Link>
-                    <div class="column">
+                    <div className="column">
                         <div>
                             First column
                         </div>
                     </div>
-                    <div class="column">
+                    <div className="column">
                         <div>
                             First column
                         </div>

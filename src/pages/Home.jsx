@@ -26,9 +26,11 @@ class Home extends Component {
     render() {
         return (
             <DefaultLayout>
+                <div className="columns">
                     {this.state.tattoos.map((tattoo, index) => {
                             return (<TattooContainerHome key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
                         })}
+                        </div>
             </DefaultLayout>
         )
     }
