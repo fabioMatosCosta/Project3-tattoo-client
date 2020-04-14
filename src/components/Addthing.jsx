@@ -8,9 +8,6 @@ class AddThing extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          name: "",
-          description: "",
-          imageUrl: "",
           error: ""
 
         };
@@ -63,7 +60,7 @@ class AddThing extends Component {
                 var formData = new FormData(this.formRef.current); // more info: https://developer.mozilla.org/en-US/docs/Web/API/FormData
         
                 axios({
-                    url: "http://localhost:5000/user/addPic",
+                    url: "http://localhost:5000/user/addPic/",
                     data: formData,
                     headers: {
                         'content-type': 'multipart/form-data'
