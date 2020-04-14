@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from "axios"
 import {Link} from "react-router-dom"
+import DefaultLayout from "../layout/Default";
 
 class TattooDetails extends Component {
     constructor(props) {
@@ -26,13 +27,13 @@ class TattooDetails extends Component {
     
     render() {
         return (
-            <div>
+            <DefaultLayout>
                 <h1>{this.state.tattoos.category}</h1>
                 <img src={this.state.tattoos.imgPath} alt=""/> 
                 <Link to = {`/artist-details/${this.state.tattoos.artist._id}`}>
                     <h1>{this.state.tattoos.artist.name}</h1>
                 </Link>
-            </div>
+            </DefaultLayout>
         )
     }
 }

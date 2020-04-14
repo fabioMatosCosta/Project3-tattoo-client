@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {getTattoos} from "../utils/tattoos"
 import axios from "axios"
+import DefaultLayout from "../layout/Default";
 
 class ArtistDetails extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class ArtistDetails extends Component {
     }
     render() {
         return (
-            <>
+            <DefaultLayout>
                 <h1>{this.state.artist.name}</h1>
                 <img src={this.state.artist.image} alt=""/>
                 <div className="columns">
@@ -31,7 +32,7 @@ class ArtistDetails extends Component {
                     return (<div className="column"><img src={tat.imgPath} alt=""/> </div>)
                 })}
             </div>
-            </>
+            </DefaultLayout>
         )
     }
 }
