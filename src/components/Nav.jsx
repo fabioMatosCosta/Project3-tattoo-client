@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { getUser } from "../utils/auth";
+import { getArt } from "../utils/authArt";
 import "./Nav.scss"
 
 
 function Nav() {
 
     let user = getUser()
+    let art = getArt()
     return (
         <nav className="navbar is-dark" id="main-nav" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" className="navbar-menu">
-                {user ?
+                {user || art ?
                     <>
                         <div className="navbar-end">
 

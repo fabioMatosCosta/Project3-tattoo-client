@@ -54,7 +54,7 @@ class Profile extends Component {
                     <h3>My Tattoos</h3>
                     <div className="columns is-multiline ">
                     {this.state.art.tattoos.map((tat,index)=>{
-                    return (<div className="column is-one-quarter-desktop"><img src={tat.imgPath} alt=""/> </div>)
+                    return (<div key={index} className="column is-one-quarter-desktop"><img src={tat.imgPath} alt=""/> </div>)
                 })}
                 </div>
                 <form onSubmit={this.handleSubmit} ref={this.formRef}> 

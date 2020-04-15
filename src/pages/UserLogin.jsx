@@ -42,7 +42,7 @@ class UserLogin extends Component {
         return (
             <DefaultLayout>
             
-                <form  classname="mt" onSubmit= {this.handleSubmit}>
+                <form  className="mt" onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
                         </div>
