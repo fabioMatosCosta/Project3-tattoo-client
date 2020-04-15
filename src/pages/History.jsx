@@ -16,7 +16,7 @@ class History extends Component {
         return (
             <DefaultLayout>
                 <div className="every-background">
-                <br /><div className="columns">
+                <div className="columns mt">
                     <div className="boxs column">
                         <Link to="/museum">
                             <img src="https://thumbs-prod.si-cdn.com/956tJJkFZCxuNQHHfFqUPswliOk=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/1c/53/1c53c24e-ca22-4235-b7eb-79403ca22c8b/mummy_tattoo.jpg" alt="" />

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Nav from "../components/Nav";
 import {Link} from "react-router-dom"
+import "./Signup.scss"
+import DefaultLayout from "../layout/Default"
 
 class SignUp extends Component {
     constructor(props) {
@@ -14,26 +16,25 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div>
-                <Nav/>
-                
+        
+                <DefaultLayout>
                 <h1 className="mt">{this.state.message}</h1>
-               
-                <div className="columns"> 
-                <Link to="/artistlog">
-                    <div className="column">
-               <img src="https://i.pinimg.com/originals/db/e3/a9/dbe3a96828adfb312144b92560ba8701.jpg" alt=""/>
-               Artist Signup Page
-            </div>
-            </Link>
-            <Link to="/userlog">
-                    <div className="column">
-               <img src="https://images.unsplash.com/photo-1526342344406-fce1a452c567?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt=""/>
-               User Signup Page  
-            </div>
-           </Link>
-            </div>
-            </div>
+                <div className="columns is-centered"> 
+                    <Link to="/artistlog">
+                        <div className="column boxss">
+                            <img className="bigger" src="https://images.unsplash.com/photo-1552627019-947c3789ffb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" alt=""/>
+                            <div className = "text usr"><span>Artist Signup Page</span> </div> 
+                        </div>
+                    </Link>
+                    <Link to="/userlog">
+                        <div className="column boxss">
+                            <img className="bigger" src="https://images.unsplash.com/photo-1506310033436-6c717a834498?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" alt=""/>
+                            <div className = "text usr"><span>User Signup Page</span> </div> 
+                        </div>
+                    </Link>
+                </div>
+                </DefaultLayout>
+           
         )
     }
 }

@@ -15,6 +15,7 @@
     font-family: 'Permanent Marker', cursive;
     font-size:1.3rem;
     color:black;
+    
     /* margin-right: 9rem; */
     /* margin-top: 1.7rem; */
   }
@@ -65,7 +66,20 @@
     letter-spacing: -2px;
   
   }
-
+ #login{
+  font-family: 'Permanent Marker', cursive;
+      color:black;
+    letter-spacing: -2px;
+    font-size:1.3rem;
+    left: 40%;
+ }
+ #signup{
+  font-family: 'Permanent Marker', cursive;
+      color:black;
+    letter-spacing: -2px;
+    font-size:1.3rem;
+    left: 30%;
+ }
   a.navbar-item:hover {
     background-color: transparent!important;
   }

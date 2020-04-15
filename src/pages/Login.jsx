@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom"
 import DefaultLayout from "../layout/Default"
+import "./Signup.scss"
 
 class Login extends Component {
     constructor(props) {
@@ -14,20 +15,19 @@ class Login extends Component {
     render() {
         return (
             <DefaultLayout>
-                <div className= "columns">
-                <div className= "column">
-                <Link to = "user-login">
-                    <img src="https://i.pinimg.com/originals/7b/da/f6/7bdaf659df9247047cfd891f43425768.jpg" alt=""/>
-                    User Login
-                </Link>
-                </div>
-                <div className= "column">
-
-                <Link to = "artist-login">
-                    <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/92623713_876682219514037_3058835782195216384_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=lETpBe130x8AX9SvxL9&_nc_ht=scontent-ams4-1.xx&_nc_tp=7&oh=975888867b0f10cb0dda094041d0be53&oe=5EB993AB" alt=""/>
-                    Artist Login
-                </Link>
-                </div>
+                <div className= "columns is-centered">
+                    <div className= "column boxss">
+                        <Link to = "user-login">
+                            <img className="bigger" src="https://images.unsplash.com/photo-1482329033286-79a3d24413b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt=""/>
+                            <div className = "text usr"><span>User Login</span> </div> 
+                        </Link>
+                    </div>
+                    <div className= "column boxss">
+                        <Link to = "artist-login">
+                            <img className="bigger" src="https://images.unsplash.com/photo-1485742032238-7543513eeba6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80 " alt=""/>
+                            <div className = "text usr"><span>Artist Login</span> </div> 
+                        </Link>
+                    </div>
                 </div>
             </DefaultLayout>
         )

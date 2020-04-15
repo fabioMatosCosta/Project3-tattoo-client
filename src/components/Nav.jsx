@@ -38,13 +38,13 @@ function Nav() {
                     </>
                     :
                     <div className="navbar-start container">
-                        <Link className="navbar-item" to="/">
+                        <Link className="navbar-item"  to="/">
                             <i className="fas fa-home"></i>
                         </Link>
-                        <Link className="navbar-item" to="/signup">
+                        <Link className="navbar-item" id="signup" to="/signup">
                             Signup
                                  </Link>
-                        <Link className="navbar-item" to="/login">
+                        <Link className="navbar-item" id="login" to="/login">
                             Login
                                  </Link>
 

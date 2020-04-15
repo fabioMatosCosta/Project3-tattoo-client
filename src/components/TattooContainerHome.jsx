@@ -10,16 +10,16 @@ class TattooContainerHome extends Component {
     render() {
         let user = getUser()
         return (
+        
             <div className="column is-one-quarter-desktop is-half-tablet mt">
                 {!user ?
                     <>
                 <Link to= {`/signup`}>
                 <div>
-                    <img className="mt"src={this.props.img} alt={this.props.alt} />
+                    <img className="mt bigger"src={this.props.img} alt={this.props.alt} />
                 </div>
                 <div>
                     <p>{this.props.alt}</p>
-                    <button>Find out more</button>
                 </div>
                 </Link>
             
