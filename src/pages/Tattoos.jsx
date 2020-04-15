@@ -63,6 +63,10 @@ class Tattoos extends Component {
             <DefaultLayout>
                     <div className="columns">
                     <div className="column mt">     
+                         Show all Tattoos
+                        <img className="categ-tattoos  bobble" onClick={this.allTattoos} src="https://res.cloudinary.com/fabiomatoscosta/image/upload/v1586698474/folder-name/james-discombe-06o01CtKjGw-unsplash.jpg.jpg" alt=""/>
+                    </div>
+                    <div className="column mt">     
                          Traditional Tattoos
                         <img className="categ-tattoos  bobble" onClick={this.toggleCategory.bind(this,"Old school")} src="https://nextluxury.com/wp-content/uploads/magnificient-tradtional-black-animal-and-red-roses-tattoo-guys-torso.jpg" alt=""/>
                     </div>

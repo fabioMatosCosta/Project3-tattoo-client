@@ -33,11 +33,12 @@ class UserSignup extends Component {
                 error: null,
                 message: response.data.message
             }, () =>{
-                this.props.history.push(`/login`)
+                this.props.history.push(`/user-login`)
             })
         })
-        .catch((err) => {
-            console.log(err)
+        .catch((err)=>{
+            let msg = err.response.data.message;
+            this.setState({message: msg})
         })
         }
 
@@ -53,20 +54,21 @@ class UserSignup extends Component {
     <div className = "column">
         <div className = "field">
             <div className = "control">
-                <input className ="input is-dark is-rounded" type="text" placeholder = "firstname" value={this.state.firstname} onChange = {this.handleChange} name = "firstName"/>
+                <input className ="input is-dark is-rounded" type="text" placeholder = "Name" value={this.state.firstname} onChange = {this.handleChange} name = "firstName"/>
             </div>
         </div>
         <div className = "field">
             <div className = "control">
-                <input className ="input is-dark is-rounded" type="email" placeholder = "email" value={this.state.email} onChange = {this.handleChange} name = "email"/>
+                <input className ="input is-dark is-rounded" type="email" placeholder = "Email" value={this.state.email} onChange = {this.handleChange} name = "email"/>
             </div>
         </div>
         <div className = "field">
             <div className = "control">
-                <input className ="input is-dark is-rounded" type="password" placeholder = "password" value={this.state.password} onChange = {this.handleChange} name = "passWord"/>
+                <input className ="input is-dark is-rounded" type="password" placeholder = "Password" value={this.state.password} onChange = {this.handleChange} name = "passWord"/>
             </div>
         </div>
         <button className= "button is-dark is-medium is-rounded" type= "submit">Sign Up</button>
+        <p>{this.state.message}</p>
     </div>
     <div className = "column">
     </div>
