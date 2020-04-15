@@ -12,7 +12,7 @@ class Tattoos extends Component {
             categories:[
                 "Black & gray",
                 "Watercolor",
-                "Old-school",
+                "Old school",
                 "Blackwork",
                 "Japanese"
             ],
@@ -20,10 +20,16 @@ class Tattoos extends Component {
             filteredTattoos: getTattoos()
         }
         this.filterResults = this.filterResults.bind(this);
+        this.allTattoos = this.allTattoos.bind(this);
+    }
+
+    allTattoos(){
+        this.setState({
+            filteredTattoos: this.state.tattoos
+        })
     }
 
     toggleCategory(category){
-        // let copyCategory = [...this.state.categories]
         let copyFilter = [...this.state.filteredCategories]
         copyFilter.push(category);
 
@@ -55,29 +61,33 @@ class Tattoos extends Component {
         return (
             <DefaultLayout>
                     <div className="columns">
-                    <div className="column">     
-                            Traditional Tattoos
-                        <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Old-school")} src="https://nextluxury.com/wp-content/uploads/magnificient-tradtional-black-animal-and-red-roses-tattoo-guys-torso.jpg" alt=""/>
-                    </div>
-                    <div className="column">     
-                            Watercolor Tattoos
-                        <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Watercolor")} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRk8BWNLtnPr64nOQ0uKRyyU6Y50IBQ1Lr9rAxuDhamV088XAbU&usqp=CAU" alt=""/>
-                    </div>
-                    <div className="column">     
-                            Black & Grey Tattoos
-                        <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Black & gray")} src="https://www.inkedmag.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU5MDMyNzg0OTc0MzI1Mzk3/gray-feat.jpg" alt=""/>
-                    </div>
-                    <div className="column">     
-                            BlackWork Tattoos
-                        <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Blackwork")} src="https://www.inkedmag.com/.image/t_share/MTU5MDMyNzU4NDAyODg1MjY5/black-1.png" alt=""/>
-                    </div>
-                    <div className="column">     
-                            Japanese Tattoos
-                        <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Japanese")} src="https://positivefox.com/wp-content/uploads/2018/09/japanese-tattoos-traditional-japanese-tattoos-dragon-japanese-tattoo-730x678.jpg" alt=""/>
-                    </div>
+                        <div className="column">     
+                                <p>All Tattoos</p>
+                            <img className="image is-5by3" onClick={this.allTattoos} src="https://res.cloudinary.com/fabiomatoscosta/image/upload/v1586698474/folder-name/james-discombe-06o01CtKjGw-unsplash.jpg.jpg" alt=""/>
+                        </div>
+                        <div className="column">     
+                                <p>Traditional Tattoos</p>
+                            <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Old school")} src="https://nextluxury.com/wp-content/uploads/magnificient-tradtional-black-animal-and-red-roses-tattoo-guys-torso.jpg" alt=""/>
+                        </div>
+                        <div className="column">     
+                                <p>Watercolor Tattoos</p>
+                            <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Watercolor")} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRk8BWNLtnPr64nOQ0uKRyyU6Y50IBQ1Lr9rAxuDhamV088XAbU&usqp=CAU" alt=""/>
+                        </div>
+                        <div className="column">     
+                                <p>Black & Grey Tattoos</p>
+                            <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Black & gray")} src="https://www.inkedmag.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU5MDMyNzg0OTc0MzI1Mzk3/gray-feat.jpg" alt=""/>
+                        </div>
+                        <div className="column">     
+                                <p>BlackWork Tattoos</p>
+                            <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Blackwork")} src="https://www.inkedmag.com/.image/t_share/MTU5MDMyNzU4NDAyODg1MjY5/black-1.png" alt=""/>
+                        </div>
+                        <div className="column">     
+                                <p>Japanese Tattoos</p>
+                            <img className="image is-5by3" onClick={this.toggleCategory.bind(this,"Japanese")} src="https://positivefox.com/wp-content/uploads/2018/09/japanese-tattoos-traditional-japanese-tattoos-dragon-japanese-tattoo-730x678.jpg" alt=""/>
+                        </div>
                     </div>
                     <div className="columns is-multiline">
-                        {this.state.tattoos.map((tattoo, index) => {
+                        {this.state.filteredTattoos.map((tattoo, index) => {
                             return (<TattooContainer key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
                         })}
                     </div>
