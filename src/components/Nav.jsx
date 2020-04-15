@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { getUser } from "../utils/auth";
-import "./Nav.css"
+import "./Nav.scss"
 
 
 function Nav() {

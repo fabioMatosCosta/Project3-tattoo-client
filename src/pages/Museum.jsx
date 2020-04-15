@@ -40,8 +40,8 @@ class Museum extends Component {
                     Locations where tattooing practices have been recorded on human remains, include: Alaska, Mongolia, Greenland, Egypt, China, Sudan, Russia, and the Philippines. All of these discoveries link to different periods of time throughout ancient history. Some of these date back to 2100 BC.
             </div>
                 <div>
-                    <br />
-                    <h1 className="title is-3x">Ancient and Traditional Practices</h1>
+                    
+                    <h1 className="title is-3x mt">Ancient and Traditional Practices</h1>
                     <p>As the first tattoos date back to ancient civilizations, the reasons behind the newly-seen skin tattoos are fuelled by different theories. These theories reflect the location and the cultures of the civilizations themselves. Let’s take a closer look at some of these civilizations and some theories about why they used to tattoo themselves.</p>
                     <img src="https://d3eh3svpl1busq.cloudfront.net/hKwyKHaPYdQPertjJeptpCwDngTecnnQ/assets/static/source/rev-d9bde98/wp-content/uploads/2018/10/History-Of-Tattoos.jpg" alt="" />
                     <footer>Tattoos in Iban culture</footer>
@@ -63,8 +63,8 @@ class Museum extends Component {
                 </div>
                 <div>
                     <p>
-                        <br />
-                        <h3 className="title is-3 small-titles">Egypt</h3>
+                      
+                        <h3 className="title is-3 small-titles mt">Egypt</h3>
                 There have been discoveries of tattooed mummies from ancient Egypt,
                 which suggest that the practice here dates back to at least 2000 BC. Some theories indicate that the tattoos found on the mummies were for decorative purposes. Research by Daniel Fouquet suggests that, in ancient Egypt, tattoos may have even been performed as a medical treatment.
 
@@ -75,8 +75,8 @@ class Museum extends Component {
                         idence, either physical or artistic, that tattooing was commonly performed on men. This practice changed, however, during the Meroitic period, between 300 BC and 400 CE, when Nubian men received tattoos.</p>
                 </div>
                 <div>
-                    <br />
-                    <p><h3 className="title is-3 small-titles">Samoa</h3>
+                  
+                    <p><h3 className="title is-3 small-titles mt">Samoa</h3>
                 Tattooing has formed a part of Samoan cultural traditions for tho
                 usands of years. The history of tattooing in Samoa is a great example of how
                  tattoos can form an integral part of social culture. It is even believed that
@@ -97,8 +97,8 @@ class Museum extends Component {
                     <img src="https://d3eh3svpl1busq.cloudfront.net/hKwyKHaPYdQPertjJeptpCwDngTecnnQ/assets/static/optimized/rev-d9bde98/wp-content/uploads/2018/10/Poke-and-Stick.jpg" alt="" />
                 </div>
                 <div>
-                    <br />
-                    <p><h3 className="title is-3 small-titles">Ancient Greece & Ancient Rome</h3>
+                  
+                    <p><h3 className="title is-3 small-titles mt">Ancient Greece & Ancient Rome</h3>
                     Written records provide evidence of tattooing from the 5th centu
                     ry BCE in Greece. Tattoos during this era in Greece and Rome were used
                      mainly on the outcasts of society. Criminals, prisoners of war, and slaves would be branded with their status.
@@ -113,13 +113,13 @@ class Museum extends Component {
                     t Roman times to show they had paid their taxes.</p>
                 </div>
                 <div>
-                    <br />
-                    <p><h3 className="title is-3 small-titles">Popular Styles Throughout Time</h3>
+                   
+                    <p><h3 className="title is-3 small-titles mt">Popular Styles Throughout Time</h3>
                 Tattoos were not very common or socially acceptable until the mid 20th century. Up until this time, they were reserved for a small population, mainly those in the entertainment industry. Fully tattooed people became a popular attraction in and of themselves.
 <br />  <br/>
                         <h2 className="title is-2 big-titles">Ink for Entertainment</h2>
-                      <br/>
-                        <h3 className="title is-3 small-titles">John O’Reilly</h3>
+                   
+                        <h3 className="title is-3 small-titles mt">John O’Reilly</h3>
                         <br/>
                 One of the most famous tattooed people from the 1800s was John O’Reilly. His elaborate and complete body art made him a popular feature in dime museums and the circus, where his tattoos attracted and amazed the audience.
 
@@ -154,17 +154,17 @@ Seamen would get tattoos from the different ports that they sailed to. The tatto
 
 </div>
 <div>
-    <br/>
+   
 
-<h3 className="title is-4">1920s</h3>
+<h3 className="title is-4 mt">1920s</h3>
 
 Throughout the 1920s, cosmetic tattoos became very popular among women. Many would get popular makeup trends tattooed on their faces, as makeup was too expensive to buy. Common makeup tattoos included eyebrows and lip liner.
 
 Traditionally designed tattoos were still less common throughout society and were not very socially acceptable. It was still mainly the so-called outcasts, such as circus performers, sailors, and criminals, who sported tattoos. As tattoos were so socially unacceptable, most women would keep their cosmetic tattoos a secret.
 </div>
 <div>
-    <br/>
-<h3 className="title is-4">1930s</h3>
+    
+<h3 className="title is-4 mt">1930s</h3>
 
 Social security numbers appeared in the 1930s and everyone was told to memorize their personal number. Many resorted to tattooing their social security numbers onto their bodies so they would always have access to it.
 
@@ -173,8 +173,8 @@ However, tattoos were still not socially accepted. Those who got a social securi
 The 1930s saw new theories across society, that linked tattoos with repressed sexual desires. Albert Parry released a book, arguing that the whole process of getting a tattoo is essentially sexual. With literature like this circulating, it is no surprise that tattoos were taboo throughout this decade.
 </div>
 <div>
-    <br/>
-<h3 className="title is-4">1940s</h3>
+    
+<h3 className="title is-4 mt">1940s</h3>
 
 The 1940s saw the birth of the iconic ‘Sailor Jerry’ style of tattoo, created by Norman Keith Collins. He added color to tattoos by creating his own pigments and adding them to his tattoo designs. The classic designs of this decade feature bold motifs and plenty of colors.
 
@@ -183,16 +183,16 @@ Thematically, tattoos in the 40s were mostly centered around nautical or militar
 This fundamental shift in tattoo design saw tattoo acceptance rise. Increased popularity meant that decorative ink came out of the shadows and was sported far more than in previous decades. Many of the Sailor Jerry style tattoos are classic and timeless, with people still choosing similar designs in the present day.
 </div>
 <div>
-    <br/>
-<h3 className="title is-4">1950s</h3>
+    
+<h3 className="title is-4 mt">1950s</h3>
 
 Throughout the 1950s, tattoos became a reflection of masculinity. While it became trendy, especially among ‘bad boys’ to have tattoos, there was still a negative social stigma around tattoos. Those with tattoos were more likely to be labeled as criminals or thugs.
 
 Society had shifted backward slightly, and tattoos once again were seen as the mark of the outcast. For those who continued to get inked, the trend of nautical tattoos continued throughout the 50s. The decade also saw an increase in the popularity of chest tattoos.
 </div>
 <div>
-    <br/>
-<h3 className="title is-4">1960s</h3>
+    
+<h3 className="title is-4 mt">1960s</h3>
 
 Tattoo parlors in New York were blamed for an increase in hepatitis throughout the 1960s. While this may or may not have been true, it certainly created a negative stigma around the tattoo industry. This meant a lot of people steered clear of getting tattooed throughout this decade.
 
@@ -201,24 +201,24 @@ However, the 60s saw an increase of tattooed idols in the media, with famous mus
 Patriotic tattoos dropped in popularity, thanks to the Vietnam war. The classic skull and crossbones designs become particularly popular, especially among bikers.
 </div>
 <div>
-    <br/>
+    
 
- <h3 className="title is-4">1970s</h3
+ <h3 className="title is-4 mt">1970s</h3
                         >
 The 1970s saw tattoos really becoming more mainstream and popular. No longer were they reserved for the outcasts of society, now regular people wanted to get them too. Peace symbols and messages of peace were particularly popular in this decade.
 
 The 70s also saw a new style, with detailed and intricate designs, gaining popularity. Full sleeve tattoos and bodysuits began emerging on young people engaged in the counterculture.
 </div>
-<div><br/>
-<h3 className="title is-4">1980s</h3>
+<div>
+<h3 className="title is-4 mt">1980s</h3>
 
 The decade of rebellion that was the 1980s saw tattoos get bigger and brighter still. Bold black outlines, Celtic knots, and colorful motif designs rose in prominence. The music scene also impacted the flourishing tattoo industry, particularly rock and roll.
 
 Many people would get inked after being inspired by their favorite rock star’s tattoos. By the 80s, society was finally on board and tattoos were, at last, socially acceptable—for most people anyway. Because stigmas dropped away, more and more ‘regular’ people got tattoos.
 </div>
 <div>
-    <br/>
-<h3 className="title is-4">1990s</h3>
+    
+<h3 className="title is-4 mt">1990s</h3>
 
 Just like in the 1980s, celebrities played a big part in the main tattoo trends of the 90s. One of the most iconic and popular tattoo designs of the 90s was Pamela Anderson’s barbed-wire armband. Other popular designs from this decade include tribal designs, Chinese letters, as well as tattoos of the sun.
 
@@ -227,13 +227,13 @@ Questions about the West’s use of tribal and traditional tattoo designs starte
     </div>
     <div>
     <br/>
-<h3 className="title is-4">2000s</h3>
+<h3 className="title is-4 mt">2000s</h3>
 
 The beginning of the 21st century saw lower back tattoos increase in popularity. The so-called “tramp stamp” became one of the most fashionable places for women to get tattoos. Butterfly and Yin-Yang symbols also gained traction.
 
 Celebrities continued to steer tattoo trends of tattoos throughout the ‘noughties’. Star tattoos rose in popularity, largely thanks to the singer, Rihanna.
 </div>
-<h3 className="title is-4">2010s</h3>
+<h3 className="title is-4 mt">2010s</h3>
 
 So far, the 2010s have seen trends related to both the design and the placement of tattoos. Small tattoos in unusual places, like the fingers or behind the ears are now very popular. Many people are opting for quirky and creative designs.</p>
                 </div>
