@@ -84,16 +84,8 @@ class Tattoos extends Component {
                     </div>
                     <div className="column mt">     
                          <h2 className="jap">Japanese Tattoos</h2> 
-                         {/* <main>
-  <div style={divStyle}>
-    <div  style={divStyle}</div>
-    <div  style={divStyle}</div>
-    <div  style={divStyle}</div>
-    <div  style={divStyle}</div>
-    <div  style={divStyle}</div>
-  </div>
-</main>
-  */}
+ 
+ 
                         <img className="categ-tattoos bobble" onClick={this.toggleCategory.bind(this,"Japanese")} src="https://positivefox.com/wp-content/uploads/2018/09/japanese-tattoos-traditional-japanese-tattoos-dragon-japanese-tattoo-730x678.jpg" alt=""/>
                     </div>
                     </div>

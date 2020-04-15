@@ -23,3 +23,9 @@ code {
 .mt{
   margin-top: 3rem;
 }
+
+.bigger{
+  height: 26rem;
+  width:26rem;
+  object-fit: cover;
+}

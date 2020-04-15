@@ -15,7 +15,7 @@ class TattooArtists extends Component {
     render() {
         return (
             <DefaultLayout>
-                <div className="columns is-multiline">
+                <div className="columns is-multiline mt">
                   {this.state.artists.map((artist,index)=>{
                       return (<ArtistContainer key={index} img={artist.image.imgPath} id={artist._id} alt={artist.name} work={artist.work} />)
                   })}
