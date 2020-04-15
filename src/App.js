@@ -12,7 +12,6 @@ import Tattoos from './pages/Tattoos';
 import TattooArtists from './pages/Artists/TattooArtists';
 import History from './pages/History';
 import Museum from './pages/Museum';
-import UploadPic from './pages/UploadPic';
 import AddThing from './pages/Addthing';
 import AnotherThing from './pages/AnotherThing';
 import Heal from './pages/Heal';

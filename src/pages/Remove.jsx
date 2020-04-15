@@ -19,7 +19,7 @@ class Remove extends Component {
 
         <b>Summary</b> 
        
-        <div class="content">
+        <div className="content">
 <ul>
     <li>      The best method for tattoo removal is laser removal. There are other options but they are less common and more painful.
 </li>
@@ -42,7 +42,7 @@ class Remove extends Component {
    It is not easy to get a tattoo removed. However, if you decide you no longer want your tattoo, you can opt for laser removal which is the best method available.
 <br/>
  
-<div class="content">
+<div className="content">
 Some alternatives to laser removal include:
 
 <ul>
@@ -86,7 +86,7 @@ You should also note the time in between treatments. You cannot simply have one 
 <br/>
 <h4 className="title">Does treatment for different tattoos vary?</h4>
 Some tattoos take longer to treat than others. Here are a few reasons:
-<div class="content">
+<div className="content">
 
 <ul>
     <li>Everybody has a unique immune system that responds to the laser treatment and tattoo removal differently.

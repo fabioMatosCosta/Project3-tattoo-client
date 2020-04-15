@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {signup} from '../../utils/auth';
+import {signupArt} from '../../utils/authArt';
 import DefaultLayout from "../../layout/Default";
 
 class ArtistSignup extends Component {
@@ -30,13 +30,13 @@ class ArtistSignup extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        signup(this.state.user)
+        signupArt(this.state.art)
             .then((response) => {
                 this.setState({
                     error: null,
                     message: response.data.message
                 }, () => {
-                    this.props.history.push(`/loginArtist`)
+                    this.props.history.push(`/artist-login`)
                 })
             })
             .catch((err) => {
@@ -56,32 +56,27 @@ class ArtistSignup extends Component {
                         <div className="column">
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="text" placeholder="Firstname" value={this.state.firstname} onChange={this.handleChange} name="firstName" />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <div className="control">
                                     <input className="input is-dark is-rounded" type="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} name="email" />
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} name="passWord" />
+                                    <input className="input is-dark is-rounded" type="password" placeholder="Password" value={this.state.passWord} onChange={this.handleChange} name="passWord" />
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} name="passWord" />
+                                    <input className="input is-dark is-rounded" type="text" placeholder="Name" value={this.state.name} onChange={this.handleChange} name="name" />
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="work" placeholder="Work" value={this.state.work} onChange={this.handleChange} name="passWord" />
+                                    <input className="input is-dark is-rounded" type="text" placeholder="Work" value={this.state.work} onChange={this.handleChange} name="work" />
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="studio" placeholder="Studio" value={this.state.studio} onChange={this.handleChange} name="passWord" />
+                                    <input className="input is-dark is-rounded" type="text" placeholder="Studio" value={this.state.studio} onChange={this.handleChange} name="studio" />
                                 </div>
                             </div>
                             <button className="button is-dark is-medium is-rounded" type="submit">Sign Up</button>
@@ -97,5 +92,3 @@ class ArtistSignup extends Component {
 }
 
 export default ArtistSignup
-
-

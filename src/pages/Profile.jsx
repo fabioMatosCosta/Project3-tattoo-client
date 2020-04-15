@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {getUser, profile} from '../utils/auth';
 import {Link} from "react-router-dom"
 import DefaultLayout from "../layout/Default";
-import AddThing from './Addthing';
 
 
 class Profile extends Component {

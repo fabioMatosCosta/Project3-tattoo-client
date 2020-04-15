@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {getTattoos} from "../utils/tattoos"
 import axios from "axios"
 import DefaultLayout from "../layout/Default";
 

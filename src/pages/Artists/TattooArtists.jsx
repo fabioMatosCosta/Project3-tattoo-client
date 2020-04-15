@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import DefaultLayout from "../../layout/Default";
-import {Link} from "react-router-dom"
 import ArtistContainer from "../../components/AritstContainer"
 import {getArtistList} from "../../utils/artistsList"
 

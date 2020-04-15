@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import DefaultLayout from "../layout/Default";
 import { getTattoos } from '../utils/tattoos';
 import TattooContainer from '../components/TattooContainer';
-import { Link } from "react-router-dom";
 
 class Tattoos extends Component {
     constructor(props) {
@@ -48,7 +47,7 @@ class Tattoos extends Component {
         let fltr = [...this.state.filteredCategories]
 
         let fltrdTattoos = tattooCopy.filter( function (tattoo){
-            return tattoo.category == fltr[0]
+            return tattoo.category === fltr[0]
         })
         this.setState({
             filteredTattoos: fltrdTattoos

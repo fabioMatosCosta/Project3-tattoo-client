@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {signup} from '../utils/auth';
 import Nav from "../components/Nav";
 import {Link} from "react-router-dom"
 
