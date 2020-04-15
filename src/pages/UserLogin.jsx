@@ -41,9 +41,8 @@ class UserLogin extends Component {
     render() {
         return (
             <DefaultLayout>
-                <br/>
-                
-                <form onSubmit= {this.handleSubmit}>
+            
+                <form  classname="mt" onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
                         </div>

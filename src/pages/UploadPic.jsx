@@ -23,8 +23,7 @@ class UploadPic extends React.Component {
               <input type="file" ref={this.fileInput} name="imgName" />
               <input type="text" name="title" />
             </label>
-            <br />
-            <button type="submit">Submit</button>
+            <button className="mt" type="submit">Submit</button>
           </form>
       );
     }

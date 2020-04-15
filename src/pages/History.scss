@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+.boxs{
+    position: relative;
+    display: inline-block; 
+}
+.boxs .text{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 48%;
+    text-align: center;
+    width: 28%; 
+    background-color: black;
+    color: white;
+    font-family: 'Nosifer', cursive;
+    font-size: 1.5rem;
+}
+
+.boxs img{
+    height: 30rem;
+    width: 31rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+.every-background{
+
+}

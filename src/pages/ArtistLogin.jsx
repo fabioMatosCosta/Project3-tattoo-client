@@ -41,9 +41,9 @@ class ArtistLogin extends Component {
     render() {
         return (
             <DefaultLayout>
-                <br/>
+              
                 
-                <form onSubmit= {this.handleSubmit}>
+                <form className="mt" onSubmit= {this.handleSubmit}>
                     <div className = "columns">
                         <div className = "column">
                         </div>

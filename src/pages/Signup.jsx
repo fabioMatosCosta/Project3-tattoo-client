@@ -17,8 +17,8 @@ class SignUp extends Component {
         return (
             <div>
                 <Nav/>
-                <br />
-                <h1>{this.state.message}</h1>
+                
+                <h1 className="mt">{this.state.message}</h1>
                
                 <div className="columns"> 
                 <Link to="/artistlog">
