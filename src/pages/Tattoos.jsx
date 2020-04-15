@@ -29,23 +29,21 @@ class Tattoos extends Component {
         })
     }
 
-    toggleCategory(category){
-        let copyFilter = [...this.state.filteredCategories]
-        copyFilter.push(category);
-
-    //   if (copyCategory.includes(category)){
-    //       copyCategory.filter((filteredCategory)=>{
-    //     return filteredCategory !== category 
-    //    })}
-    //    else {
-    //        copyCategory.push(category)}
+    toggleCategory(clickedCategory){
+        let categoryCopy = [...this.state.categories]
+        let newCat = [];
+        if(categoryCopy.includes(clickedCategory)) {
+            newCat = categoryCopy.filter((cat)=> clickedCategory === cat)
+        } else {
+            debugger
+            newCat.push(clickedCategory)
+        }
         this.setState({
-            filteredCategories: copyFilter
+            filteredCategories: newCat
         }, this.filterResults)
     }
 
     filterResults() {
-        debugger
         let tattooCopy=[...this.state.tattoos]
         let fltr = [...this.state.filteredCategories]
 
