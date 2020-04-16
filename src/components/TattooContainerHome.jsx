@@ -16,7 +16,7 @@ class TattooContainerHome extends Component {
                     <>
                 <Link to= {`/signup`}>
                 <div>
-                    <img className="mt bigger"src={this.props.img} alt={this.props.alt} />
+                    <img className="mt bigger imgs"src={this.props.img} alt={this.props.alt} />
                 </div>
                 <div>
                     <p>{this.props.alt}</p>

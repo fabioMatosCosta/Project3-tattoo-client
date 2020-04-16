@@ -27,7 +27,7 @@ export const loginArt = (art) => {
     })
 }
 
-export const logout = () => {
+export const logoutArt = () => {
     return axios({
         method:'GET',
         url: 'logout',
@@ -65,4 +65,11 @@ export const getArt = () => {
 
 export const remArt = () => {
     window.localStorage.removeItem('artist');
+}
+
+export const deleteTattoo = (id) => {
+    return axios({
+        method:'GET',
+        url: `artist/deleteTattoo/${id}`
+    })
 }

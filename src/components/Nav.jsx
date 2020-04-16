@@ -8,7 +8,7 @@ import "./Nav.scss"
 function Nav() {
 
     let user = getUser()
-    let art = getArt()
+    
     return (
         <nav className="navbar is-dark" id="main-nav" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" className="navbar-menu">
