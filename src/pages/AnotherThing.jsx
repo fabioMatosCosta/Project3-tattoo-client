@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import DefaultLayout from "../layout/Default"
+import DefaultLayout from "../layout/Default";
+const URLADDANOTHERTHING = process.env.REACT_APP_ANOTHERTHING;
 
 class AddThing extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class AddThing extends Component {
         var formData = new FormData(this.formRef.current);
 
         axios({
-            url: "hhttp://localhost:5000/artist/addPic",
+            url: URLADDANOTHERTHING,
             data: formData,
             headers: {
                 'content-type': 'multipart/form-data'

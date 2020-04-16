@@ -1,7 +1,8 @@
 import Axios from 'axios';
+const URL = process.env.REACT_APP_DOMAIN
 
 const axios = Axios.create({
-    baseURL: 'http://localhost:5000/',
+    baseURL: URL,
     withCredentials: true,
     headers: {'content-type': 'application/x-www-form-urlencoded'}
 })

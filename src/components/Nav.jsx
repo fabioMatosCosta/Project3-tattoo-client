@@ -12,13 +12,9 @@ function Nav() {
     return (
         <nav className="navbar is-dark" id="main-nav" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" className="navbar-menu">
-                {user || art ?
+                {user ?
                     <>
                         <div className="navbar-end">
-
-                            {/* <Link className="navbar-item" id="home" to="/">
-                                Home
-                                </Link> */}
                             <Link className="navbar-item" id="tattoo-artists" to="/tattoo-artists">
                                 Tattoo Artists
                                 </Link>
