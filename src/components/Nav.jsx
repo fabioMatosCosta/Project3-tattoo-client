@@ -14,26 +14,26 @@ function Nav() {
                     <div className="logo">
                     
                         <div> <Link to="/" className="navbar-item"><b>T<span>at</span>t<span>o</span>o</b> </Link> </div>
-                      
-                    <div>
-                        <Link className="navbar-item " className="tattoo-artists" to="/tattoo-artists">
-                            All Tattoo Artists
+
+                        <div>
+                            <Link className="navbar-item " className="tattoo-artists" to="/tattoo-artists">
+                                All Tattoo Artists
+                            </Link>
+                        </div>
+                        <div>
+                            <Link className="navbar-item" className="tattoos" to="/tattoos">
+                                Tattoos
+                            </Link>
+                        </div>
+                        <div >
+                            <Link className="navbar-item " className="history" to="/history">
+                                Guides And History
+                            </Link>
+                        </div>
+                        <div>
+                                <Link className="navbar-item " className="profile" to="/profile">
+                                    <p>{user.firstName}</p>
                                 </Link>
-                                </div>
-                                <div>
-                        <Link className="navbar-item" className="tattoos" to="/tattoos">
-                            Tattoos
-                                 </Link>
-                                 </div>
-                                 <div >
-                        <Link className="navbar-item " className="history" to="/history">
-                            Tattoo Guides And History
-                                 </Link>
-                                 </div>
-                                 <div>
-                        <Link className="navbar-item " className="profile" to="/profile">
-                            <p>{user.firstName}</p>
-                        </Link>
                         </div>
                     </div>
                     </div>
@@ -41,7 +41,7 @@ function Nav() {
                     <div className="navbar-end ">
                         <Link className="navbar-item " className="logout" to="/logout">
                             <i className="fas fa-sign-out-alt"></i>Logout
-                                 </Link>
+                        </Link>
                     </div>
                 </>
                 :
@@ -51,11 +51,10 @@ function Nav() {
                     </Link>
                     <Link className="navbar-item " className="signup" to="/signup">
                         Signup
-                                 </Link>
+                    </Link>
                     <Link className="navbar-item " className="login" to="/login">
                         Login
-                                 </Link>
-
+                    </Link>
                 </div>
                 
             }

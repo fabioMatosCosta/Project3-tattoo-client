@@ -26,7 +26,7 @@ function ArtNav() {
                         </div>
                         <div>
                             <Link className="navbar-item" className="history" to="/history">
-                                Tattoo Guides And History
+                                Guides And History
                             </Link>
                         </div>
                         <div>
