@@ -45,27 +45,24 @@ class Profile extends Component {
             })
     }
 
-    // handledelete(e) {
-    //     e.preventDefault();
+    handledelete(e) {
+        e.preventDefault();
 
-    //     axios({
-    //         url: URLADDTATTOO,
-    //         data: formData,
-    //         headers: {
-    //             'content-type': 'multipart/form-data'
-    //         },
-    //         method: "POST",
-    //         withCredentials: true
-    //     })
-    //         .then((response) => {
-    //             this.setState({
-    //                 art: profileArt()
-    //             })
-    //         })
-    //         .catch((error) => {
-    //             this.setState({ error:error.data})
-    //         })
-    // }
+        axios({
+            url: URLADDTATTOO,
+            withCredentials: true,
+            headers: {'content-type': 'application/x-www-form-urlencoded'},
+            method: "GET",
+        })
+            .then(() => {
+                this.setState({
+                    art: profileArt()
+                })
+            })
+            .catch((error) => {
+                this.setState({ error:error.data})
+            })
+    }
 
 
     render() {
@@ -82,8 +79,8 @@ class Profile extends Component {
                         {this.state.art.tattoos.map((tat, index) => {
                             return (
                                 <div key={index} className="column is-one-quarter-desktop">
-                                <img src={tat.imgPath} alt="" />
-                                
+                                    <img src={tat.imgPath} alt="" />
+                                    <button onClick = {this.handledelete}>Delete pic</button>
                                 </div>)
                         })}
                     </div>
