@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import DefaultLayout from "../layout/Default";
-import { getTattoos } from '../utils/tattoos';
-import TattooContainerHome from '../components/TattooContainerHome'
-import "./Home.scss"
+import { getTattoos, tattooList } from '../utils/tattoos';
+import TattooContainerHome from '../components/TattooContainerHome';
+import "./Home.scss";
 
 class Home extends Component {
     constructor(props) {

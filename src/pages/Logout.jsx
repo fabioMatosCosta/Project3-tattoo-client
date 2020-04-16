@@ -1,9 +1,11 @@
 import React, {Component}from 'react'
 import {logout} from '../utils/auth'
+import {logoutArt} from '../utils/authArt'
 
 class Logout extends Component {
     handleLogout(){
         logout()
+        logoutArt()
         .then(() => {
             this.props.history.push(`/login`)
         })

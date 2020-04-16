@@ -20,16 +20,15 @@ class Profile extends Component {
             <DefaultLayout>
                 <h1 className="title is-3">Yo {this.state.user.firstName.toUpperCase()}</h1>
                 <div className="back">
-                <h1>Yo {this.state.user.firstName.toUpperCase()}</h1>
-
+                    <h1>Yo {this.state.user.firstName.toUpperCase()}</h1>
                     <figure className = "image is-1by1">
                         <img className="is-rounded" src={this.state.user.image.imgPath} alt="pic"/>
                     </figure>
-                    <div id="container">
-                    <p><Link to = "/edit-profile">Edit Profile Pic</Link>
-
-  </p>
-</div>                </div>
+                        <div id="container">
+                            <p><Link to = "/edit-profile">Edit Profile Pic</Link>
+                            </p>
+                        </div>                
+                    </div>
             </DefaultLayout>
         )
     }
