@@ -1,31 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-
-
-.boxss{
-    position: relative;
-    display: inline-block; 
-  }
-  .boxss .text{
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 75%;
-    text-align: center;
-    width: 28%; 
-    color: rgb(255, 255, 255);
-    font-family: 'Rye', cursive;
-    font-size: 1.5rem;
-  }
-  
-  .boxss img{
-    height: 30rem;
-    width: 31rem;
-    border-radius: 1.2rem;
-    object-fit: cover;
-  }
-  
-  $pure-white: hsla(0, 0%, 100%, 1); // #fff
+$pure-white: hsla(0, 0%, 100%, 1); // #fff
 $pure-black: hsla(0, 0%, 0%, 1); // #000
 $dark-jungle-green: hsla(210, 3%, 11%, 1); //1c1d1e
 $grey-dark: hsla(0, 0%, 25%, 1); // #404040

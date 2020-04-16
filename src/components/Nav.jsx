@@ -12,7 +12,7 @@ function Nav() {
     return (
         <nav className="navbar is-dark" id="main-nav" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" className="navbar-menu">
-                {user || art ?
+                {user ?
                     <>
                         <div className="navbar-end">
 
@@ -41,7 +41,7 @@ function Nav() {
                     :
                     <div className="navbar-start container">
                         <Link className="navbar-item"  to="/">
-                            <i className="fas fa-home"></i>
+                            <i className="fas fa-home fas fa-2x	i has-text-black"></i>
                         </Link>
                         <Link className="navbar-item" id="signup" to="/signup">
                             Signup

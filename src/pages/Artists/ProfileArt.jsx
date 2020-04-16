@@ -3,7 +3,7 @@ import {getArt,profileArt} from '../../utils/authArt';
 import {Link} from "react-router-dom"
 import DefaultLayout from "../../layout/Default";
 import axios from "axios"
-
+import "./ProfileArt.scss"
 
 
 class Profile extends Component {
@@ -46,13 +46,14 @@ class Profile extends Component {
     render() {
         return (
             <DefaultLayout>
+                <div className="roboto">
                 <h1 className="title is-3">Yo {this.state.art.name}</h1>
-                    <div className = "image is-128x128 has-text-centered">
+                    <div className = "image is-128x128">
                         <img className="is-rounded" src={this.state.art.image.imgPath} alt="pic"/>
                         <Link to = "/edit-artist-profile"><button>Edit Profile Pic</button></Link>
                     </div>
-                    <h3>My Tattoos</h3>
-                    <div className="columns is-multiline ">
+                    <h3 className="mt">My Tattoos</h3>
+                    <div className="columns is-multiline mt is-centered">
                     {this.state.art.tattoos.map((tat,index)=>{
                     return (<div key={index} className="column is-one-quarter-desktop"><img src={tat.imgPath} alt=""/> </div>)
                 })}
@@ -66,7 +67,7 @@ class Profile extends Component {
 
                         <button type="submit">Submit </button>
                     </form>
-
+                    </div>
             </DefaultLayout>
         )
     }
