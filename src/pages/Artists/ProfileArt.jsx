@@ -36,9 +36,9 @@ class Profile extends Component {
         })
             .then((response) => {  
                 this.props.history.push(`/artistProfile`)
-                this.setState({
-                    art:profileArt()
-                })
+                    this.setState({
+                        art: profileArt()
+                    })
             })
             .catch((error) => {
                 this.setState({ error: error.response.data.message })
