@@ -46,7 +46,6 @@ class Profile extends Component {
     }
 
     handledelete(e) {
-        e.preventDefault();
 
         axios({
             url: `${URLDLTTATTOO}/${e}`,
