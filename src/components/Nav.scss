@@ -2,9 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
-
+.logo {
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  position: absolute;;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;;
+}
+logo b{
+  font: 400 19vh "Rye";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444c4, 0 0 0.5em #ff44448e, 0 0 0.1em #ff44448c, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
 #main-nav{
-    background-image: url("./fistback.png");
+    background-image: url("//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg");
     height: 30vh;
     /* object-fit: cover; */
     background-size: 100%;
@@ -23,7 +48,6 @@
     font-family: 'Press Start 2P', cursive;
     font-size:1.3rem;
     color:black;
-    transform: rotate(-10deg);
     letter-spacing: -4px;
     height: 10vh;
     margin-top: 3rem;
@@ -31,29 +55,25 @@
   #logout{
     font-family: 'Rye', cursive;
     font-size:1.3rem;
-    color:black;
-    transform: rotate(20deg);  
+    color:black; 
   }
   #profile{
     font-family: 'Frijole', cursive;
     font-size:1.3rem;
-    color:black;
-    transform: rotate(20deg);  
+    color:black; 
   
   }
   #welcome{
     font-family: 'Frijole', cursive;
     font-size:1.3rem;
-    color:black;
-    transform: rotate(-20deg);  
+    color:black;  
   
   }
   #tattoo-artists{
     font-family: 'Frijole', cursive;
     width: 10vw;
     font-size:1.3rem;
-    color:black;
-    transform: rotate(-90deg);  
+    color:black;  
     letter-spacing: -2px;
     /* margin-left: 3rem; */
   
@@ -61,8 +81,7 @@
   #tattoos{
     font-family: 'Frijole', cursive;
     font-size:1.3rem;
-    color:black;
-    transform: rotate(-90deg);  
+    color:black;  
     letter-spacing: -2px;
   
   }

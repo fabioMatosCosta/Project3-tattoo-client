@@ -22,15 +22,14 @@
   bottom: 0;
    user-select: none;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;;
 }
-.righty{
-}
+
 .logo b{
   font: 400 19vh "Rye";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+  color: rgb(255, 4, 4);
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #000000, 0 0 0.5em #8d0303e8, 0 0 0.1em #660404, 0 10px 3px #000;
 }
 .logo b span{
   animation: blink linear infinite 2s;
@@ -105,12 +104,14 @@
     /* margin-right: 9rem; */
     /* margin-top: 1.7rem; */
   }
+  .wider{
+    width: 40rem;
+  }
   .history{
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rye', cursive;
     font-size:1.3rem;
     color:white;
     transform: rotate(-10deg);
-    letter-spacing: -4px;
     height: 10vh;
     // margin-top: 3rem;
   }

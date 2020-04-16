@@ -31,7 +31,7 @@ class ArtistDetails extends Component {
                 <div className="columns">
 
                     {this.state.artist.tattoos.map((tat, index) => {
-                        return (<div className="column mt"><img src={tat.imgPath} alt="" /> </div>)
+                        return (<div key = {index} className="column mt"><img src={tat.imgPath} alt="" /> </div>)
                     })}
                 </div>
             </DefaultLayout>

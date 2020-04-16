@@ -5,6 +5,7 @@ import ArtDefault from "../../layout/ArtDefault";
 import axios from "axios"
 import "./ProfileArt.scss"
 const URLADDTATTOO = process.env.REACT_APP_ADDTATTOO;
+// const URLDLTTATTOO = process.env.REACT_APP_DELETETATTOO;
 
 
 
@@ -44,6 +45,29 @@ class Profile extends Component {
             })
     }
 
+    // handledelete(e) {
+    //     e.preventDefault();
+
+    //     axios({
+    //         url: URLADDTATTOO,
+    //         data: formData,
+    //         headers: {
+    //             'content-type': 'multipart/form-data'
+    //         },
+    //         method: "POST",
+    //         withCredentials: true
+    //     })
+    //         .then((response) => {
+    //             this.setState({
+    //                 art: profileArt()
+    //             })
+    //         })
+    //         .catch((error) => {
+    //             this.setState({ error:error.data})
+    //         })
+    // }
+
+
     render() {
         return (
             <ArtDefault>
@@ -56,7 +80,11 @@ class Profile extends Component {
                     <h3 className="mt">My Tattoos</h3>
                     <div className="columns is-multiline mt is-centered">
                         {this.state.art.tattoos.map((tat, index) => {
-                            return (<div key={index} className="column is-one-quarter-desktop"><img src={tat.imgPath} alt="" /> </div>)
+                            return (
+                                <div key={index} className="column is-one-quarter-desktop">
+                                <img src={tat.imgPath} alt="" />
+                                
+                                </div>)
                         })}
                     </div>
                     <form onSubmit={this.handleSubmit} ref={this.formRef}>

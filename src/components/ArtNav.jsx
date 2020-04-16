@@ -10,12 +10,12 @@ function ArtNav() {
         <nav className="navbar whole" role="navigation" aria-label="main navigation">
             {art ?
                 <>
-                    <div NameName="navbar-end">
-                    <div className="logo righty">
-                        <div><b>T<span>at</span>t<span>o</span>o</b> </div>
-                    <div>
-                        <Link className="navbar-item" className="tattoo-artists" to="/tattoo-artists">
-                            Other Tattoo Artists
+                    <div className="navbar-end">
+                    <div className="logo">
+                        <div ><Link className="navbar-item"  to="/"><b>T<span>at</span>t<span>o</span>o</b></Link> </div>
+                    <div >
+                        <Link className="navbar-item tattoo-artists" className="tattoo-artists" to="/tattoo-artists">
+                            All Tattoo Artists
                                 </Link>
                                 </div>
                                 <div>
