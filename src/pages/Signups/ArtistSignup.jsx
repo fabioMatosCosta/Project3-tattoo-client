@@ -61,7 +61,7 @@ class ArtistSignup extends Component {
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <label for = "work" className="label">Work:</label>
+                                    <label className="label">Work:</label>
                                     <div className="select is-dark is-rounded">
                                         <select name = "work" onChange={this.handleChange}>
                                             <option value = "Black & gray">Black & gray</option>
