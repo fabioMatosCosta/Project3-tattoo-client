@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import {getArt,profileArt} from '../../utils/authArt';
-import {Link} from "react-router-dom"
-import DefaultLayout from "../../layout/Default";
+import { getArt, profileArt } from '../../utils/authArt';
+import { Link } from "react-router-dom"
+import ArtDefault from "../../layout/ArtDefault";
 import axios from "axios"
 import "./ProfileArt.scss"
 const URLADDTATTOO = process.env.REACT_APP_ADDTATTOO;
@@ -16,8 +16,8 @@ class Profile extends Component {
 
         this.state = {
             art: getArt(),
-            error:"",
-            
+            error: "",
+
         }
     }
     handleSubmit(e) {
@@ -34,43 +34,48 @@ class Profile extends Component {
             method: "POST",
             withCredentials: true
         })
-            .then((response) => {  
-                this.props.history.push(`/artistProfile`)
+            .then((response) => {
                 this.setState({
-                    art:profileArt()
+                    art: profileArt()
                 })
             })
             .catch((error) => {
-                this.setState({ error: error.response.data.message })
+                this.setState({ error:error.data})
             })
     }
 
     render() {
         return (
-            <DefaultLayout>
+            <ArtDefault>
                 <div className="roboto">
-                <h1 className="title is-3">Yo {this.state.art.name}</h1>
-                    <div className = "image is-128x128">
-                        <img className="is-rounded" src={this.state.art.image.imgPath} alt="pic"/>
-                        <Link to = "/edit-artist-profile"><button>Edit Profile Pic</button></Link>
+                    <h1 className="title is-3">Yo {this.state.art.name}</h1>
+                    <div className="image is-128x128">
+                        <img className="is-rounded" src={this.state.art.image.imgPath} alt="pic" />
+                        <Link to="/edit-artist-profile"><button>Edit Profile Pic</button></Link>
                     </div>
                     <h3 className="mt">My Tattoos</h3>
                     <div className="columns is-multiline mt is-centered">
-                    {this.state.art.tattoos.map((tat,index)=>{
-                    return (<div key={index} className="column is-one-quarter-desktop"><img src={tat.imgPath} alt=""/> </div>)
-                })}
-                </div>
-                <form onSubmit={this.handleSubmit} ref={this.formRef}> 
-                        <input placeholder="category" type="text" name="category" />
+                        {this.state.art.tattoos.map((tat, index) => {
+                            return (<div key={index} className="column is-one-quarter-desktop"><img src={tat.imgPath} alt="" /> </div>)
+                        })}
+                    </div>
+                    <form onSubmit={this.handleSubmit} ref={this.formRef}>
+                        <select id="work" name="category">
+                            <option value="Blackwork">Blackwork</option>
+                            <option value="Black & gray">Black & Gray</option>
+                            <option value="Watercolor">Watercolor</option>
+                            <option value="Old school">Old school</option>
+                            <option value="Japanese">Japanese</option>
+                        </select>
                         <label className="custom-file-upload">
                             <input type="file" name="photo" />
                                        Upload more tattoos!
                                    </label>
 
-                        <button type="submit">Submit </button>
+                        <button className="button is-black is-rounded" type="submit">Submit </button>
                     </form>
-                    </div>
-            </DefaultLayout>
+                </div>
+            </ArtDefault>
         )
     }
 }
