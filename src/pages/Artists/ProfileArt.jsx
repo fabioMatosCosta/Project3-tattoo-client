@@ -5,7 +5,7 @@ import ArtDefault from "../../layout/ArtDefault";
 import axios from "axios"
 import "./ProfileArt.scss"
 const URLADDTATTOO = process.env.REACT_APP_ADDTATTOO;
-// const URLDLTTATTOO = process.env.REACT_APP_DELETETATTOO;
+const URLDLTTATTOO = process.env.REACT_APP_DELETETATTOO;
 
 
 
@@ -49,7 +49,7 @@ class Profile extends Component {
         e.preventDefault();
 
         axios({
-            url: URLADDTATTOO,
+            url: `${URLDLTTATTOO}/${e}`,
             withCredentials: true,
             headers: {'content-type': 'application/x-www-form-urlencoded'},
             method: "GET",
@@ -80,7 +80,7 @@ class Profile extends Component {
                             return (
                                 <div key={index} className="column is-one-quarter-desktop">
                                     <img src={tat.imgPath} alt="" />
-                                    <button onClick = {this.handledelete}>Delete pic</button>
+                                    <button  onClick={this.handledelete.bind(this, tat._id)}>Delete pic</button>
                                 </div>)
                         })}
                     </div>
