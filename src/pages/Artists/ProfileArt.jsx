@@ -16,6 +16,7 @@ class Profile extends Component {
         this.formRef = React.createRef();
 
         this.state = {
+            call: profileArt(),
             art: getArt(),
             error: "",
 
@@ -35,14 +36,15 @@ class Profile extends Component {
             method: "POST",
             withCredentials: true
         })
-            .then((response) => {
-                this.setState({
-                    art: profileArt()
-                })
+        .then(() => {
+            this.setState({
+                call: profileArt(),
+                art: getArt()
             })
-            .catch((error) => {
-                this.setState({ error:error.data})
-            })
+        })
+        .catch((error) => {
+            this.setState({ error:error.data})
+        })
     }
 
     handledelete(e) {
@@ -53,14 +55,15 @@ class Profile extends Component {
             headers: {'content-type': 'application/x-www-form-urlencoded'},
             method: "GET",
         })
-            .then(() => {
-                this.setState({
-                    art: profileArt()
-                })
+        .then(() => {
+            this.setState({
+                call: profileArt(),
+                art: getArt()
             })
-            .catch((error) => {
-                this.setState({ error:error.data})
-            })
+        })
+        .catch((error) => {
+            this.setState({ error:error.data})
+        })
     }
 
 
