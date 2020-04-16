@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from "axios"
 import DefaultLayout from "../layout/Default";
+const URL = process.env.REACT_APP_DOMAIN
+
 
 class ArtistDetails extends Component {
     constructor(props) {
@@ -15,7 +17,7 @@ class ArtistDetails extends Component {
         }
     }
     componentDidMount() {
-        axios.get(`http://localhost:5000/artist/artist-detail/${this.props.match.params.id}`)
+        axios.get(`${URL}artist/artist-detail/${this.props.match.params.id}`)
             .then(response => {
                 this.setState({ artist: response.data })
             })

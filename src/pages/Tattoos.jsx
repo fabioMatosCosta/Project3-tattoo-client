@@ -5,7 +5,6 @@ import TattooContainer from '../components/TattooContainer';
 import { getUser } from "../utils/auth";
 import { getArt } from "../utils/authArt";
 import "./Tattoos.scss"
-import ArtDefault from "../layout/ArtDefault"
 
 class Tattoos extends Component {
     constructor(props) {

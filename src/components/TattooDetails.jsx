@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from "axios"
 import {Link} from "react-router-dom"
 import DefaultLayout from "../layout/Default";
+const URL = process.env.REACT_APP_DOMAIN
 
 class TattooDetails extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class TattooDetails extends Component {
         }
     }
     componentDidMount() {
-        axios.get(`http://localhost:5000/tattoos/tattoo-detail/${this.props.match.params.id}`)
+        axios.get(`${URL}tattoos/tattoo-detail/${this.props.match.params.id}`)
         .then(response => {
             this.setState({tattoos: response.data})
         })
