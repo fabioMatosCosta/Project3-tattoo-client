@@ -56,7 +56,9 @@ class Tattoos extends Component {
     }
 
     render() {
-        
+        const divStyle = {
+            backgroundImage: 'url("https://www.inkedmag.com/.image/t_share/MTU5MDMyNzU4NDAyODg1MjY5/black-1.png")',
+          };
         return (
             <DefaultLayout>
                     <div className="columns">

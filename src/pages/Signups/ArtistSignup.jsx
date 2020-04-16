@@ -56,28 +56,38 @@ class ArtistSignup extends Component {
                         <div className="column">
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} name="email" />
+                                    <input className="input is-dark is-rounded" type="text" required placeholder="Name" value={this.state.name} onChange={this.handleChange} name="name" />
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <input className="input is-dark is-rounded" type="password" placeholder="Password" value={this.state.passWord} onChange={this.handleChange} name="passWord" />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <div className="control">
-                                    <input className="input is-dark is-rounded" type="text" placeholder="Name" value={this.state.name} onChange={this.handleChange} name="name" />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <div className="control">
-                                    <input className="input is-dark is-rounded" type="text" placeholder="Work" value={this.state.work} onChange={this.handleChange} name="work" />
+                                    <label for = "work" className="label">Work:</label>
+                                    <div className="select is-dark is-rounded">
+                                        <select name = "work" onChange={this.handleChange}>
+                                            <option value = "Black & gray">Black & gray</option>
+                                            <option value = "Watercolor">Watercolor</option>
+                                            <option value = "Old school">Old school</option>
+                                            <option value = "Blackwork">Blackwork</option>
+                                            <option value = "Japanese">Japanese</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
                                     <input className="input is-dark is-rounded" type="text" placeholder="Studio" value={this.state.studio} onChange={this.handleChange} name="studio" />
                                 </div>
+                            </div>
+                            <div className="field">
+                                <div className="control">
+                                    <input className="input is-dark is-rounded" type="email" required placeholder="Email" value={this.state.email} onChange={this.handleChange} name="email" />
+                                </div>
+                            </div>
+                            <div className="field">
+                                <div className="control">
+                                    <input className="input is-dark is-rounded" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" value={this.state.passWord} onChange={this.handleChange} name="passWord" />
+                                </div>
+                                <small className = "is-centered" >At least 8 characters one uppercase one lowercase</small>
                             </div>
                             <button className="button is-dark is-medium is-rounded" type="submit">Sign Up</button>
                         </div>
