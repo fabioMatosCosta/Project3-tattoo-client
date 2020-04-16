@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import DefaultLayout from "../layout/Default";
 import { getTattoos } from '../utils/tattoos';
 import TattooContainer from '../components/TattooContainer';
+import { getUser } from "../utils/auth";
+import { getArt } from "../utils/authArt";
 import "./Tattoos.scss"
+import ArtDefault from "../layout/ArtDefault"
 
 class Tattoos extends Component {
     constructor(props) {
@@ -59,7 +62,10 @@ class Tattoos extends Component {
         const divStyle = {
             backgroundImage: 'url("https://www.inkedmag.com/.image/t_share/MTU5MDMyNzU4NDAyODg1MjY5/black-1.png")',
           };
+          let user = getUser()
+          let art = getArt()
         return (
+         
             <DefaultLayout>
                     <div className="columns">
                     <div className="column mt">     
