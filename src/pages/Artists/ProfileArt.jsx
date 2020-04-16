@@ -4,6 +4,8 @@ import {Link} from "react-router-dom"
 import DefaultLayout from "../../layout/Default";
 import axios from "axios"
 import "./ProfileArt.scss"
+const URLADDTATTOO = process.env.REACT_APP_ADDTATTOO;
+
 
 
 class Profile extends Component {
@@ -24,7 +26,7 @@ class Profile extends Component {
         var formData = new FormData(this.formRef.current);
 
         axios({
-            url: "http://localhost:5000/artist/addTattoo",
+            url: URLADDTATTOO,
             data: formData,
             headers: {
                 'content-type': 'multipart/form-data'

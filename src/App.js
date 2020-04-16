@@ -26,7 +26,6 @@ import ArtistDetails from './components/ArtistDetails'
 function App() {
   return (
     <div className="App">
-      {/* <UploadPic /> */}
       <Switch>
           <Route exact path = '/' component = {Home}/>
           <Route path = '/signup' component = {Signup}/>

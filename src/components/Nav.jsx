@@ -15,10 +15,6 @@ function Nav() {
                 {user ?
                     <>
                         <div className="navbar-end">
-
-                            {/* <Link className="navbar-item" id="home" to="/">
-                                Home
-                                </Link> */}
                             <Link className="navbar-item" id="tattoo-artists" to="/tattoo-artists">
                                 Tattoo Artists
                                 </Link>
