@@ -27,9 +27,10 @@ class ArtistDetails extends Component {
             <DefaultLayout>
                 <h1 className="title is-3">{this.state.artist.name}</h1>
                 <h1 className="title is-5">{this.state.artist.work}</h1>
-                <h1 className="title is-6">{this.state.artist.studio}</h1>
-                <h1>{this.state.artist.email}</h1>
+                <h1 className="title is-6">Studio : {this.state.artist.studio}</h1>
+                <h1>contact : {this.state.artist.email}</h1>
                 <img className="bigger" src={this.state.artist.image} alt="" />
+                <h1 className="title is-6">Work :</h1>
                 <div className="columns">
 
                     {this.state.artist.tattoos.map((tat, index) => {
