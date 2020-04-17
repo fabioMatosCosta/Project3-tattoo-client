@@ -12,7 +12,7 @@ function ArtNav() {
                 <>
                     <div className="navbar-end">
                         <div className="logo">
-                            <div ><Link className="navbar-item"  to="/"><b>T<span>at</span>t<span>o</span>o</b>    
+                            <div ><Link className="navbar-item"  to="/tattoos"><b>T<span>at</span>t<span>o</span>o</b>    
                            </Link> </div>
                         <div >
                             <Link className="navbar-item tattoo-artists" className="tattoo-artists" to="/tattoo-artists">
@@ -30,7 +30,7 @@ function ArtNav() {
                             </Link>
                         </div>
                         <div>
-                            <Link className="navbar-item" className="profile" to="/profile">
+                            <Link className="navbar-item" className="profile" to="/artistProfile">
                                 <p>{art.name}</p>
                             </Link>
                         </div>
