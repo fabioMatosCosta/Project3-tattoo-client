@@ -29,7 +29,7 @@ class TattooDetails extends Component {
     render() {
         return (
             <DefaultLayout>
-                <h1>{this.state.tattoos.category}</h1>
+                <h1 className="all">{this.state.tattoos.category}</h1>
                 <img src={this.state.tattoos.imgPath} alt=""/> 
                 <Link to = {`/artist-details/${this.state.tattoos.artist._id}`}>
                     <h1>{this.state.tattoos.artist.name}</h1>

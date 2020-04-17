@@ -66,6 +66,7 @@ class Tattoos extends Component {
         return (
          
             <DefaultLayout>
+                <div className="all">
                     <div className="columns">
                     <div className="column mt">     
                          Show all Tattoos
@@ -98,6 +99,7 @@ class Tattoos extends Component {
                         {this.state.filteredTattoos.map((tattoo, index) => {
                             return (<TattooContainer key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
                         })}
+                    </div>
                     </div>
             </DefaultLayout>
         )
