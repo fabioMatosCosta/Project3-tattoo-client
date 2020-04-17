@@ -34,7 +34,6 @@ class AddThing extends Component {
                 this.props.history.push(`/artistProfile`)
             })
             .catch((error) => {
-                debugger
                 this.setState({ error: error.response.data.message })
             })
     }
@@ -45,14 +44,15 @@ class AddThing extends Component {
             <DefaultLayout>
                 <div>
                     <form onSubmit={this.handleSubmit} ref={this.formRef}> 
-                        <input placeholder="title" type="text" name="title" />
-                        <input placeholder="description" type="text" name="description" />
-                        <label className="custom-file-upload">
-                            <input type="file" name="photo" />
-                                       Upload profile pic
-                                   </label>
-
-                        <button type="submit">Submit </button>
+                        <div className = "field">
+                            <label className="custom-file-upload">
+                                <input type="file" name="photo" />
+                                        Upload profile pic
+                            </label>
+                        </div>
+                        <div className = "field">
+                            <button type="submit" className="button is-black is-rounded">Submit </button>
+                        </div>
                     </form>
                     {this.state.error ?
                         <p>{this.state.error}</p> :

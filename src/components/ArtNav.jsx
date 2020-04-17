@@ -31,7 +31,7 @@ function ArtNav() {
                         </div>
                         <div>
                             <Link className="navbar-item" className="profile" to="/profile">
-                                <p>{art.firstName}</p>
+                                <p>{art.name}</p>
                             </Link>
                         </div>
                         </div>

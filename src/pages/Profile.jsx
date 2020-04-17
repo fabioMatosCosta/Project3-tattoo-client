@@ -18,17 +18,23 @@ class Profile extends Component {
     render() {
         return (
             <DefaultLayout>
-                <h1 className="title is-3">Yo {this.state.user.firstName.toUpperCase()}</h1>
+                
                 <div className="back">
-                    <h1>Yo {this.state.user.firstName.toUpperCase()}</h1>
-                    <figure className = "image is-1by1">
-                        <img className="is-rounded" src={this.state.user.image.imgPath} alt="pic"/>
-                    </figure>
-                        <div id="container">
-                            <p><Link to = "/edit-profile">Edit Profile Pic</Link>
-                            </p>
-                        </div>                
+                    <h1 className="title is-3 has-text-white">Yo {this.state.user.firstName.toUpperCase()}</h1>
+                    <div className = "columns">
+                        <div className = "column"></div>
+                        <div className = "column">
+                            <figure className = "image is-300x300">
+                                <img className="is-rounded " src={this.state.user.image.imgPath} alt="pic"/>
+                            </figure>
+                        </div>
+                        <div className = "column"></div>
                     </div>
+                    <div id="container">
+                        <p><Link to = "/edit-profile">Edit Profile Pic</Link>
+                        </p>
+                    </div>                
+                </div>
             </DefaultLayout>
         )
     }
