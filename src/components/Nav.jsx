@@ -13,7 +13,7 @@ function Nav() {
                     
                     <div className="logo">
                     
-                        <div> <Link to="/" className="navbar-item"><b>T<span>at</span>t<span>o</span>o</b> </Link> </div>
+                        <div> <Link to="/tattoos" className="navbar-item"><b>T<span>at</span>t<span>o</span>o</b> </Link> </div>
 
                         <div>
                             <Link className="navbar-item " className="tattoo-artists" to="/tattoo-artists">

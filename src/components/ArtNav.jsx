@@ -12,8 +12,8 @@ function ArtNav() {
                 <>
                     <div className="navbar-end">
                         <div className="logo">
-                            <div ><Link className="navbar-item"  to="/"><b>T<span>at</span>t<span>o</span>o</b>    
-                            <b>Un<span>der</span>gr<span>ou</span>nd</b></Link> </div>
+                            <div ><Link className="navbar-item"  to="/tattoos"><b>T<span>at</span>t<span>o</span>o</b>    
+                           </Link> </div>
                         <div >
                             <Link className="navbar-item tattoo-artists" className="tattoo-artists" to="/tattoo-artists">
                                 All Tattoo Artists
@@ -30,8 +30,8 @@ function ArtNav() {
                             </Link>
                         </div>
                         <div>
-                            <Link className="navbar-item" className="profile" to="/profile">
-                                <p>{art.firstName}</p>
+                            <Link className="navbar-item" className="profile" to="/artistProfile">
+                                <p>{art.name}</p>
                             </Link>
                         </div>
                         </div>
@@ -47,7 +47,8 @@ function ArtNav() {
                 <div className="navbar-start container">
                     <div className="logo">
                         <div ><Link className="navbar-item"  to="/"><b>T<span>at</span>t<span>o</span>o</b>    
-                        <b>Un<span>der</span>gr<span>ou</span>nd</b></Link> </div>
+                        <b>Un<span>der</span>gr<span>ou</span>nd</b></Link>
+                         </div>
                     <div className = "navbar-start">
                         <Link className="navbar-item has-text-white" to="/signup">
                             Signup

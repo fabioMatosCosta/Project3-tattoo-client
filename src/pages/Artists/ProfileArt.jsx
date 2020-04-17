@@ -72,17 +72,24 @@ class Profile extends Component {
             <ArtDefault>
                 <div className="roboto">
                     <h1 className="title is-3">Yo {this.state.art.name}</h1>
-                    <div className="image is-128x128">
-                        <img className="is-rounded" src={this.state.art.image.imgPath} alt="pic" />
-                        <Link to="/edit-artist-profile"><button>Edit Profile Pic</button></Link>
+                    <div className = "columns">
+                        <div className = "column"></div>
+                        <div className = "column">
+                            <div className="image is-128x128">
+                                <img className="is-rounded" src={this.state.art.image.imgPath} alt="pic" />
+                                <Link to="/edit-artist-profile"><button className="button is-black is-rounded">Edit Profile Pic</button></Link>
+                            </div>
+                        </div>
+                        <div className = "column"></div>
                     </div>
+        
                     <h3 className="mt">My Tattoos</h3>
                     <div className="columns is-multiline mt is-centered">
                         {this.state.art.tattoos.map((tat, index) => {
                             return (
                                 <div key={index} className="column is-one-quarter-desktop">
                                     <img src={tat.imgPath} alt="" />
-                                    <button  onClick={this.handledelete.bind(this, tat._id)}>Delete pic</button>
+                                    <button  onClick={this.handledelete.bind(this, tat._id)} className="button is-black is-rounded">Delete pic</button>
                                 </div>)
                         })}
                     </div>
@@ -96,8 +103,8 @@ class Profile extends Component {
                         </select>
                         <label className="custom-file-upload">
                             <input type="file" name="photo" />
-                                       Upload more tattoos!
-                                   </label>
+                            Upload more tattoos!
+                        </label>
 
                         <button className="button is-black is-rounded" type="submit">Submit </button>
                     </form>
