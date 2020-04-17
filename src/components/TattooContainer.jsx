@@ -12,7 +12,7 @@ class TattooContainer extends Component {
             <div className="column is-one-quarter-desktop is-half-tablet">
                 <Link to= {`/tattoo-details/${this.props.id}`}>
                 <div>
-                    <img src={this.props.img} alt={this.props.alt} />
+                    <img className="bigger" src={this.props.img} alt={this.props.alt} />
                 </div>
                 <div>
                     <p>{this.props.alt}</p>
