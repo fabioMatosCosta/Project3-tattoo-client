@@ -47,7 +47,7 @@ function ArtNav() {
                 <div className="navbar-start container">
                     <div className="logo">
                         <div ><Link className="navbar-item"  to="/"><b>T<span>at</span>t<span>o</span>o</b>    
-                        <b>Un<span>der</span>gr<span>ou</span>nd</b></Link> </div>
+                        {/* <b>Un<span>der</span>gr<span>ou</span>nd</b></Link> </div> */}
                     <div className = "navbar-start">
                         <Link className="navbar-item has-text-white" to="/signup">
                             Signup
