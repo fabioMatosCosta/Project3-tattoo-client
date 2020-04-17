@@ -18,8 +18,8 @@ class Home extends Component {
     render() {
         return (
             <DefaultLayout>
-                <p className="mt">Want to do a tattoo and need inspiration? 
-                Find awesome tattoo pics and their maker, just sign up or log in</p> 
+                <p className="mt">Want to do a tattoo and need inspiration? Are you an tattoo artist and want to show off your work ?</p>
+                <p>Find awesome tattoo pics and their maker, just sign up or log in</p> 
                 <div className="columns">
                     {this.state.tattoos.map((tattoo, index) => {
                             return (<TattooContainerHome key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
