@@ -29,11 +29,11 @@ class ArtistDetails extends Component {
                 <h1 className="title is-5">{this.state.artist.work}</h1>
                 <h1 className="title is-6">{this.state.artist.studio}</h1>
                 <h1>{this.state.artist.email}</h1>
-                <img src={this.state.artist.image} alt="" />
+                <img className="bigger" src={this.state.artist.image} alt="" />
                 <div className="columns">
 
                     {this.state.artist.tattoos.map((tat, index) => {
-                        return (<div key = {index} className="column mt"><img src={tat.imgPath} alt="" /> </div>)
+                        return (<div key = {index} className="column mt"><img className="bigger" src={tat.imgPath} alt="" /> </div>)
                     })}
                 </div>
             </DefaultLayout>

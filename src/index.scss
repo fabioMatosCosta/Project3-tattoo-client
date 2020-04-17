@@ -13,6 +13,9 @@ code {
     monospace;
 }
 
+  
+
+
 #logo {
   width: 20vw;
   height: 100vh;
@@ -27,6 +30,9 @@ code {
   height: 26rem;
   width:26rem;
   object-fit: cover;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px rgb(0, 0, 0)
 }
 
 #ft1, #ft2{
