@@ -32,7 +32,7 @@ function Nav() {
                         </div>
                         <div>
                                 <Link className="navbar-item " className="profile" to="/profile">
-                                    <p>{user.firstName}</p>
+                                    {user.firstName}
                                 </Link>
                         </div>
                     </div>
