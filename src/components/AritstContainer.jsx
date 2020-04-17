@@ -16,8 +16,8 @@ class ArtistContainer extends Component {
                     </div>
                     <div>
                         <p>{this.props.alt}</p>
-                        <button>Find out more</button>
                         <h1>{this.props.work}</h1>
+                        <button className="button is-black is-rounded" >Find out more</button>
                     </div>
                 </Link>
             </div>
