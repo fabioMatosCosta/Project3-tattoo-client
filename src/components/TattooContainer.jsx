@@ -16,7 +16,7 @@ class TattooContainer extends Component {
                 </div>
                 <div>
                     <p>{this.props.alt}</p>
-                    <button>Find out more</button>
+                    <button  className="button is-black is-rounded" >Find out more</button>
                 </div>
                 </Link>
             </div>
