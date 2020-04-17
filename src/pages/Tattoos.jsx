@@ -70,23 +70,23 @@ class Tattoos extends Component {
                     <div className="columns">
                     <div className="column mt">     
                          Show all Tattoos
-                        <img className="categ-tattoos  bobble" onClick={this.allTattoos} src="https://res.cloudinary.com/fabiomatoscosta/image/upload/v1586698474/folder-name/james-discombe-06o01CtKjGw-unsplash.jpg.jpg" alt=""/>
+                        <img className="categ-tattoos bobble" onClick={this.allTattoos} src="https://res.cloudinary.com/fabiomatoscosta/image/upload/v1586698474/folder-name/james-discombe-06o01CtKjGw-unsplash.jpg.jpg" alt=""/>
                     </div>
                     <div className="column mt">     
                          Traditional Tattoos
-                        <img className="categ-tattoos  bobble" onClick={this.toggleCategory.bind(this,"Old school")} src="https://nextluxury.com/wp-content/uploads/magnificient-tradtional-black-animal-and-red-roses-tattoo-guys-torso.jpg" alt=""/>
+                        <img className="categ-tattoos bobble" onClick={this.toggleCategory.bind(this,"Old school")} src="https://nextluxury.com/wp-content/uploads/magnificient-tradtional-black-animal-and-red-roses-tattoo-guys-torso.jpg" alt=""/>
                     </div>
                     <div className="column mt">     
                          Watercolor Tattoos
-                        <img className="categ-tattoos  bobble" onClick={this.toggleCategory.bind(this,"Watercolor")} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRk8BWNLtnPr64nOQ0uKRyyU6Y50IBQ1Lr9rAxuDhamV088XAbU&usqp=CAU" alt=""/>
+                        <img className="categ-tattoos bobble" onClick={this.toggleCategory.bind(this,"Watercolor")} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRk8BWNLtnPr64nOQ0uKRyyU6Y50IBQ1Lr9rAxuDhamV088XAbU&usqp=CAU" alt=""/>
                     </div>
                     <div className="column mt">     
                          Black & Grey Tattoos
-                        <img className="categ-tattoos  bobble" onClick={this.toggleCategory.bind(this,"Black & gray")} src="https://www.inkedmag.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU5MDMyNzg0OTc0MzI1Mzk3/gray-feat.jpg" alt=""/>
+                        <img className="categ-tattoos bobble" onClick={this.toggleCategory.bind(this,"Black & gray")} src="https://www.inkedmag.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU5MDMyNzg0OTc0MzI1Mzk3/gray-feat.jpg" alt=""/>
                     </div>
                     <div className="column mt">     
                          BlackWork Tattoos
-                        <img className="categ-tattoos  bobble" onClick={this.toggleCategory.bind(this,"Blackwork")} src="https://www.inkedmag.com/.image/t_share/MTU5MDMyNzU4NDAyODg1MjY5/black-1.png" alt=""/>
+                        <img className="categ-tattoos bobble" onClick={this.toggleCategory.bind(this,"Blackwork")} src="https://www.inkedmag.com/.image/t_share/MTU5MDMyNzU4NDAyODg1MjY5/black-1.png" alt=""/>
                     </div>
                     <div className="column mt">     
                          <h2 className="jap">Japanese Tattoos</h2> 
@@ -97,7 +97,7 @@ class Tattoos extends Component {
                     </div>
                     <div className="columns is-multiline">
                         {this.state.filteredTattoos.map((tattoo, index) => {
-                            return (<TattooContainer key={index} id={tattoo._id} img={tattoo.imgPath} alt={tattoo.category} />)
+                            return (<TattooContainer key={index} id={tattoo._id} img={tattoo.imgPath}  alt={tattoo.category} />)
                         })}
                     </div>
                     </div>
